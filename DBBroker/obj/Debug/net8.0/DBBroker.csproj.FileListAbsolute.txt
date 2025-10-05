@@ -1,0 +1,15 @@
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\bin\Debug\net8.0\DBBroker.deps.json
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\bin\Debug\net8.0\DBBroker.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\bin\Debug\net8.0\DBBroker.pdb
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\bin\Debug\net8.0\Common.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\bin\Debug\net8.0\Common.pdb
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.csproj.AssemblyReference.cache
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfoInputs.cache
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfo.cs
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.csproj.CoreCompileInputs.cache
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.csproj.Up2Date
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\refint\DBBroker.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.pdb
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\ref\DBBroker.dll
