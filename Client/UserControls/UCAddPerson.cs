@@ -21,5 +21,40 @@ namespace Client.UserControls
             cbKategorija.DisplayMember = "Naziv";
             cbKategorija.SelectedIndex = -1;
         }
+        public bool Validacija()
+        {
+            txtIme.BackColor = Color.White;
+            txtPrezime.BackColor = Color.White;
+            txtEmail.BackColor = Color.White;
+            cbKategorija.BackColor = Color.White;
+            bool isValid = true;
+            if (string.IsNullOrEmpty(txtIme.Text))
+            {
+                txtIme.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (string.IsNullOrEmpty(txtPrezime.Text))
+            {
+                txtPrezime.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                txtEmail.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (cbKategorija.SelectedIndex == -1)
+            {
+                cbKategorija.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (!txtEmail.Text.Contains('@'))
+            {
+                MessageBox.Show("Neispravan unos emaila (@)");
+                txtEmail.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            return isValid;
+        }
     }
 }

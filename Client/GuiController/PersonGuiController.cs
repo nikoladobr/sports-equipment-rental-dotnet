@@ -55,6 +55,12 @@ namespace Client.GuiController
 
         private void AddPerson(object? sender, EventArgs e)
         {
+            if (!addPerson.Validacija())
+            {
+                MessageBox.Show("Popunite lepo sva polja...");
+                return;
+            }
+
             o.Ime = addPerson.TxtIme.Text;
             o.Prezime = addPerson.TxtPrezime.Text;
             o.Email = addPerson.TxtEmail.Text;
@@ -156,7 +162,13 @@ namespace Client.GuiController
             Osoba staraOsoba = managePerson.DgvOsobe.SelectedRows[0].DataBoundItem as Osoba;
             if (staraOsoba == null) { MessageBox.Show("Грешка при читању особе."); return; }
 
-            var o = new Osoba
+            if (!managePerson.Validacija())
+            {
+                MessageBox.Show("Popunite lepo sva polja...");
+                return;
+            }
+
+            Osoba o = new Osoba
             {
                 Id = staraOsoba.Id,
                 Ime = managePerson.TxtIme.Text,

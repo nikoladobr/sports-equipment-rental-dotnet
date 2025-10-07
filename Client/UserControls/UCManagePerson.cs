@@ -1,4 +1,5 @@
 ﻿using Common.Domain;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,8 +29,8 @@ namespace Client.UserControls
             cbKategorija.SelectedIndex = 0;
 
             dgvOsobe.AutoGenerateColumns = false;
-            dgvOsobe.AllowUserToAddRows = false;  
-            dgvOsobe.ReadOnly = true;   
+            dgvOsobe.AllowUserToAddRows = false;
+            dgvOsobe.ReadOnly = true;
 
             dgvOsobe.Columns.Clear();
             dgvOsobe.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Ime", DataPropertyName = "Ime" });
@@ -39,7 +40,7 @@ namespace Client.UserControls
             var colKat = new DataGridViewComboBoxColumn
             {
                 HeaderText = "Kategorija",
-                DataPropertyName = "KategorijaId", 
+                DataPropertyName = "KategorijaId",
                 DataSource = kategorije,
                 ValueMember = "Id",
                 DisplayMember = "Naziv",
@@ -49,6 +50,41 @@ namespace Client.UserControls
             dgvOsobe.Columns.Add(colKat);
 
             dgvOsobe.DataSource = new BindingList<Osoba>(osobe);
+        }
+        public bool Validacija()
+        {
+            txtIme.BackColor = Color.White;
+            txtPrezime.BackColor = Color.White;
+            txtEmail.BackColor = Color.White;
+            cbKategorija.BackColor = Color.White;
+            bool isValid = true;
+            if (string.IsNullOrEmpty(txtIme.Text))
+            {
+                txtIme.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (string.IsNullOrEmpty(txtPrezime.Text))
+            {
+                txtPrezime.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                txtEmail.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (cbKategorija.SelectedIndex == -1)
+            {
+                cbKategorija.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            if (!txtEmail.Text.Contains('@'))
+            {
+                MessageBox.Show("Neispravan unos emaila (@)");
+                txtEmail.BackColor = Color.Salmon;
+                isValid = false;
+            }
+            return isValid;
         }
     }
 }
