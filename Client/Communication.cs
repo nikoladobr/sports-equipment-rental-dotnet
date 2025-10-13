@@ -168,30 +168,42 @@ namespace Client
 
         internal Response CreateIznajmljivanje(Iznajmljivanje i)
         {
-            var request = new Request { Argument = i, Operation = Operation.CreateIznajmljivanje };
+            var request = new Request 
+            { 
+                Argument = i, 
+                Operation = Operation.CreateIznajmljivanje 
+            };
             serializer.Send(request);
             var response = serializer.Receive<Response>();
-            if (response.ExceptionMessage != null) throw new Exception(response.ExceptionMessage);
+            if (response.ExceptionMessage != null) 
+                throw new Exception(response.ExceptionMessage);
             return response;
         }
 
         internal List<Iznajmljivanje> SearchIznajmljivanje(Iznajmljivanje kriterijum)
         {
-            var request = new Request { Argument = kriterijum, Operation = Operation.SearchIznajmljivanje };
+            Request request = new Request
+            {
+                Operation = Operation.SearchIznajmljivanje,
+                Argument = kriterijum
+            };
             serializer.Send(request);
-
-            var response = serializer.Receive<Response>();
+            Response response = serializer.Receive<Response>();
             if (response.ExceptionMessage != null)
                 throw new Exception(response.ExceptionMessage);
-
-            var el = (JsonElement)response.Result;
-            var lista = el.Deserialize<List<Iznajmljivanje>>();
-            return lista ?? new List<Iznajmljivanje>();
+            return serializer.ReadType<List<Iznajmljivanje>>(response.Result);
         }
 
         internal Iznajmljivanje GetIznajmljivanjeById(int id)
         {
-            var request = new Request { Argument = new Iznajmljivanje { Id = id }, Operation = Operation.GetIznajmljivanjeById };
+            var request = new Request 
+            { 
+                Argument = new Iznajmljivanje 
+                { 
+                    Id = id 
+                }, 
+                Operation = Operation.GetIznajmljivanjeById 
+            };
             serializer.Send(request);
 
             var response = serializer.Receive<Response>();
@@ -200,6 +212,22 @@ namespace Client
 
             var el = (JsonElement)response.Result;
             return el.Deserialize<Iznajmljivanje>();
+        }
+
+        internal List<StavkaIznajmljivanja> GetStavkeByIznajmljivanjeId(int id)
+        {
+            var request = new Request
+            {
+                Argument = new Iznajmljivanje { Id = id },
+                Operation = Operation.GetStavkeByIznajmljivanjeId
+            };
+            serializer.Send(request);
+
+            var response = serializer.Receive<Response>();
+            if (response.ExceptionMessage != null)
+                throw new Exception(response.ExceptionMessage);
+
+            return serializer.ReadType<List<StavkaIznajmljivanja>>(response.Result);
         }
     }
 }

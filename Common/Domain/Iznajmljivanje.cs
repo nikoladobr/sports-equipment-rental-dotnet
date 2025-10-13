@@ -21,7 +21,13 @@ namespace Common.Domain
         public string TableName => "Iznajmljivanje";
 
         public string Values => $"{UkupanIznos.ToString(System.Globalization.CultureInfo.InvariantCulture)}, '{VremeOd:yyyy-MM-dd HH:mm:ss}', {(Zaposleni?.Id ?? 0)}, {(Osoba?.Id ?? 0)}";
-
+        public List<string> JoinTableNames => new List<string> { "Osoba", "Zaposleni" };
+        public List<string> JoinColumnNames => null;
+        public List<string> JoinConditions => new List<string>
+        {
+            "Iznajmljivanje.idOsoba = Osoba.idOsoba",
+            "Iznajmljivanje.idZaposleni = Zaposleni.idZaposleni"
+        };
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
             List<IEntity> iznajmljivanja = new List<IEntity>();
@@ -34,11 +40,13 @@ namespace Common.Domain
                     VremeOd = (DateTime)reader["vremeOd"],
                     Zaposleni = new Zaposleni
                     {
-                        Id = (int)reader["idZaposleni"]
+                        Id = (int)reader["idZaposleni"],
+                        KorisnickoIme = (string)reader["korisnickoIme"]
                     },
                     Osoba = new Osoba
                     {
-                        Id = (int)reader["idOsoba"]
+                        Id = (int)reader["idOsoba"],
+                        Email = (string)reader["email"]
                     }
                 };
                 iznajmljivanja.Add(i);

@@ -14,28 +14,19 @@ namespace Server.SystemOperation
 
         protected override void ExecuteConcreteOperation()
         {
-            if (i.Zaposleni == null || i.Zaposleni.Id <= 0)
-                throw new Exception("Изнајмљивање нема запосленог.");
-            if (i.Osoba == null || i.Osoba.Id <= 0)
-                throw new Exception("Изнајмљивање нема особу.");
-
             broker.Add(i);
-           
-            var list = broker.GetByCondition(new Iznajmljivanje(), "1=1 ORDER BY idIznajmljivanje DESC");
-            if (list.Count == 0) throw new Exception("Грешка при учитавању изнајмљивања.");
+
+            var list = broker.GetByCondition(new Iznajmljivanje(), "1=1 order by Iznajmljivanje.idIznajmljivanje DESC");
+            if (list.Count == 0) throw new InvalidOperationException("Није могуће прочитати ID изнајмљивања");
             i.Id = ((Iznajmljivanje)list[0]).Id;
-
-            int rb = 1;
-            foreach (var s in i.Stavke)
+            foreach (var si in i.Stavke)
             {
-                if (s.Oprema == null || s.Oprema.Id <= 0)
-                    throw new Exception("Ставка изнајмљивања нема опрему.");
-
-                s.Rb = rb++;
-                s.IdIznajmljivanje = i.Id;
-                s.Iznajmljivanje = i;
-
-                broker.Add(s);
+                if (si.Oprema == null)
+                {
+                    throw new InvalidOperationException("Молимо одаберите одговарајућу опрему.");
+                }
+                si.Iznajmljivanje = i;
+                broker.Add(si);
             }
         }
     }

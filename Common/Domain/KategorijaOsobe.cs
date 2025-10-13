@@ -14,7 +14,12 @@ namespace Common.Domain
 
         public string TableName => "KategorijaOsobe";
         public string Values => $"'{Naziv}'";
-        
+
+        public List<string> JoinConditions => null;
+
+        public List<string> JoinTableNames => null;
+
+        public List<string> JoinColumnNames => null;
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {

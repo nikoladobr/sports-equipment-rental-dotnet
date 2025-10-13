@@ -14,7 +14,7 @@ namespace Server.SystemOperation
 
         public SearchIznajmljivanjeSO(Iznajmljivanje i)
         {
-            this.i = i ?? new Iznajmljivanje();
+            this.i = i;
         }
 
         protected override void ExecuteConcreteOperation()
@@ -25,10 +25,10 @@ namespace Server.SystemOperation
                 cond.Add($"idIznajmljivanje = {i.Id}");
 
             if (i.Zaposleni != null && i.Zaposleni.Id > 0)
-                cond.Add($"idZaposleni = {i.Zaposleni.Id}");
+                cond.Add($"Iznajmljivanje.idZaposleni = {i.Zaposleni.Id}");
 
             if (i.Osoba != null && i.Osoba.Id > 0)
-                cond.Add($"idOsoba = {i.Osoba.Id}");
+                cond.Add($"Iznajmljivanje.idOsoba = {i.Osoba.Id}");
 
             // Oprema
             var opremaId = i.Stavke?.FirstOrDefault()?.Oprema?.Id ?? 0;

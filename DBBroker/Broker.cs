@@ -1,5 +1,6 @@
 ﻿using Common.Domain;
 using Microsoft.Data.SqlClient;
+using System.Text;
 
 namespace DBBroker
 {
@@ -35,17 +36,9 @@ namespace DBBroker
         {
             using SqlCommand cmd = connection.CreateCommand();
 
-            if (obj is Common.Domain.Iznajmljivanje)
-            {
-                cmd.CommandText =
-                    $"INSERT INTO Iznajmljivanje (ukupanIznos, vremeOd, idZaposleni, idOsoba) " +
-                    $"VALUES({obj.Values})";
-            }
-            else
-            {
-                cmd.CommandText = $"INSERT INTO {obj.TableName} VALUES({obj.Values})";
-            }
+            cmd.CommandText = $"INSERT INTO {obj.TableName} VALUES({obj.Values})";
             cmd.ExecuteNonQuery();
+            cmd.Dispose();
         }
 
         public List<IEntity> GetAll(IEntity entity)
@@ -60,11 +53,26 @@ namespace DBBroker
 
         public List<IEntity> GetByCondition(IEntity entity, string condition)
         {
-            SqlCommand command = connection.CreateCommand();
-            command.CommandText = $"SELECT * FROM {entity.TableName} WHERE {condition}";
-            using SqlDataReader reader = command.ExecuteReader();
+            using SqlCommand cmd = connection.CreateCommand();
+
+            var sb = new StringBuilder($"SELECT * FROM {entity.TableName}");
+
+            if (entity.JoinTableNames != null && entity.JoinConditions != null &&
+                entity.JoinTableNames.Count > 0 && entity.JoinTableNames.Count == entity.JoinConditions.Count)
+            {
+                for (int i = 0; i < entity.JoinTableNames.Count; i++)
+                {
+                    sb.Append($" JOIN {entity.JoinTableNames[i]} ON {entity.JoinConditions[i]}");
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(condition))
+                sb.Append(" WHERE ").Append(condition);
+
+            cmd.CommandText = sb.ToString();
+
+            using SqlDataReader reader = cmd.ExecuteReader();
             List<IEntity> list = entity.GetReaderList(reader);
-            command.Dispose();
             return list;
         }
 

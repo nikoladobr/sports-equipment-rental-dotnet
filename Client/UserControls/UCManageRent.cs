@@ -35,6 +35,7 @@ namespace Client.UserControls
             cbZaposleni.SelectedIndex = -1;
 
 
+
         }
     }
 }

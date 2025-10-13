@@ -19,5 +19,8 @@
     <Compile Update="UserControls\UCManageRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControls\UCShowRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

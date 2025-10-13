@@ -19,11 +19,11 @@ namespace Server.SystemOperation
 
         protected override void ExecuteConcreteOperation()
         {
-            var headList = broker.GetByCondition(new Iznajmljivanje(), $"idIznajmljivanje = {id}");
+            var headList = broker.GetByCondition(new Iznajmljivanje(), $"Iznajmljivanje.idIznajmljivanje = {id}");
             var header = headList.Cast<Iznajmljivanje>().FirstOrDefault();
             if (header == null) { Result = null; return; }
 
-            var stavkeList = broker.GetByCondition(new StavkaIznajmljivanja(), $"idIznajmljivanje = {id}");
+            var stavkeList = broker.GetByCondition(new StavkaIznajmljivanja(), $"Iznajmljivanje.idIznajmljivanje = {id}");
             header.Stavke = stavkeList.Cast<StavkaIznajmljivanja>().ToList();
 
             Result = header;

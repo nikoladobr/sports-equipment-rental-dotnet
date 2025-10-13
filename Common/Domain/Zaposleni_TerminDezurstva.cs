@@ -18,6 +18,12 @@ namespace Common.Domain
 
         public string Values => $"{Zaposleni.Id}, {TerminDezurstva.Id}, '{DatumDezurstva}'";
 
+        public List<string> JoinConditions => null;
+
+        public List<string> JoinTableNames => null;
+
+        public List<string> JoinColumnNames => null;
+
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
             List<IEntity> zaposlenitermini = new List<IEntity>();
@@ -28,8 +34,8 @@ namespace Common.Domain
                     Zaposleni = new Zaposleni
                     {
                         Id = (int)reader["id"],
-                        Ime = (string)reader["ime"],
-                        Prezime = (string)reader["prezime"],
+                        ImeZ = (string)reader["imeZ"],
+                        PrezimeZ = (string)reader["prezimeZ"],
                         KorisnickoIme = (string)reader["korisnickoIme"],
                         Sifra = (string)reader["sifra"]
                     },

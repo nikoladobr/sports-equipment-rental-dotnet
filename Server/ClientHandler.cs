@@ -102,6 +102,10 @@ namespace Server
                         var iArg = ((JsonElement)req.Argument).Deserialize<Iznajmljivanje>();
                         r.Result = Controller.Instance.GetIznajmljivanjeById(iArg);
                         break;
+                    case Operation.GetStavkeByIznajmljivanjeId:
+                        var iArgg = ((System.Text.Json.JsonElement)req.Argument).Deserialize<Iznajmljivanje>();
+                        r.Result = Controller.Instance.GetStavkeByIznajmljivanjeId(iArgg);
+                        break;
                 }
             }
             catch (Exception ex)

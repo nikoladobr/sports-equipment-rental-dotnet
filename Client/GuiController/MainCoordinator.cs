@@ -55,5 +55,9 @@ namespace Client.GuiController
         {
             frmMain.ChangePanel(rentGuiController.CreateManageRent());
         }
+        internal void ShowShowRentPanel()
+        {
+            frmMain.ChangePanel(rentGuiController.CreateShowRent());
+        }
     }
 }

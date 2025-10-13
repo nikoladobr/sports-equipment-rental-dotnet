@@ -22,6 +22,7 @@ namespace Common.Communication
         GetAllZaposleni,
         SearchIznajmljivanje,
         GetIznajmljivanjeById,
-        GetIznajmljivanjaByAmountRange
+        GetIznajmljivanjaByAmountRange,
+        GetStavkeByIznajmljivanjeId
     }
 }

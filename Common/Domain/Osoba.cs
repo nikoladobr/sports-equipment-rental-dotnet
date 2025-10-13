@@ -15,9 +15,22 @@ namespace Common.Domain
         public string Email { get; set; }
         public KategorijaOsobe KategorijaOsobe { get; set; }
 
+        public int KategorijaOsobeId => KategorijaOsobe?.Id ?? 0;
+
+        public override string ToString()
+        {
+            return $"{Email}";
+        }
+
         public string TableName => "Osoba";
 
         public string Values => $"'{Ime}', '{Prezime}', '{Email}', {(KategorijaOsobe?.Id.ToString() ?? "NULL")}";
+
+        public List<string> JoinConditions => null;
+
+        public List<string> JoinTableNames => null;
+
+        public List<string> JoinColumnNames => null;
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
@@ -33,6 +46,7 @@ namespace Common.Domain
                     KategorijaOsobe = new KategorijaOsobe
                     {
                         Id = (int)reader["idKategorijaOsobe"],
+                        //Naziv = (string)reader["naziv"]
                     }
                 };
                 osobe.Add(o);

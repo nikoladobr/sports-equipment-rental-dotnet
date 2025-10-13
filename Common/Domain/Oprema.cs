@@ -10,18 +10,23 @@ namespace Common.Domain
     public class Oprema : IEntity
     {
         public int Id { get; set; }
-        public string Naziv { get; set; }
+        public string NazivO { get; set; }
         public decimal Cena { get; set; }
 
         public string TableName => "Oprema";
 
-        public string Values => $"'{Naziv}', '{Cena}'";
+        public string Values => $"'{NazivO}', '{Cena}'";
 
-        public override string? ToString()
+        public List<string> JoinConditions => null;
+
+        public List<string> JoinTableNames => null;
+
+        public List<string> JoinColumnNames => null;
+
+        public override string ToString()
         {
-            return Naziv;
+            return $"{NazivO}";
         }
-
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
@@ -31,7 +36,7 @@ namespace Common.Domain
                 Oprema o = new Oprema
                 {
                     Id = (int)reader["idOprema"],
-                    Naziv = (string)reader["naziv"],
+                    NazivO = (string)reader["nazivO"],
                     Cena = (decimal)reader["cena"]
                 };
                 opreme.Add(o);

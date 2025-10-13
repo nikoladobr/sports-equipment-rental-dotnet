@@ -23,28 +23,39 @@ namespace Common.Domain
 
         public string TableName => "StavkaIznajmljivanja";
 
-        public string Values => $"{IdIznajmljivanje}, {Rb}, {Cena.ToString(CultureInfo.InvariantCulture)}, '{VremeDo:yyyy-MM-dd HH:mm:ss}', {Trajanje}, {Iznos.ToString(CultureInfo.InvariantCulture)}, " +
-            $"{Oprema.Id}, {Kolicina}";
+        public string Values => $"{(Iznajmljivanje?.Id ?? 0)}, {Rb}, {Cena.ToString(CultureInfo.InvariantCulture)}, '{VremeDo:yyyy-MM-dd HH:mm:ss}', {Trajanje}, {Iznos.ToString(CultureInfo.InvariantCulture)}, " +
+            $"{(Oprema?.Id ?? 0)}, {Kolicina}";
+        public List<string> JoinTableNames => new List<string> { "Iznajmljivanje", "Oprema" };
 
+        public List<string> JoinColumnNames => null;
+
+        public List<string> JoinConditions => new List<string>
+        {
+            "StavkaIznajmljivanja.idIznajmljivanje = Iznajmljivanje.idIznajmljivanje",
+            "StavkaIznajmljivanja.idOprema = Oprema.idOprema"
+        };
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
             var stavke = new List<IEntity>();
             while (reader.Read())
             {
-                int idIz = (int)reader["idIznajmljivanje"];
-
                 var si = new StavkaIznajmljivanja
                 {
-                    IdIznajmljivanje = idIz,
-                    Iznajmljivanje = new Iznajmljivanje { Id = idIz },
-
                     Rb = (int)reader["rb"],
-                    Kolicina = (int)reader["kolicina"],
-                    Cena = (decimal)reader["cena"],
-                    VremeDo = (DateTime)reader["vremeDo"],
                     Trajanje = (int)reader["trajanje"],
+                    Cena = (decimal)reader["cena"],
+                    Kolicina = (int)reader["kolicina"],
                     Iznos = (decimal)reader["iznos"],
-                    Oprema = new Oprema { Id = (int)reader["idOprema"] }
+                    VremeDo = (DateTime)reader["vremeDo"],
+                    Iznajmljivanje = new Iznajmljivanje
+                    {
+                        Id = (int)reader["idIznajmljivanje"]
+                    },
+                    Oprema = new Oprema
+                    {
+                        Id = (int)reader["idOprema"],
+                        NazivO = (string)reader["nazivO"]
+                    }
                 };
 
                 stavke.Add(si);

@@ -110,5 +110,13 @@ namespace Server
             UpdateOsobaSO so = new UpdateOsobaSO(o);
             so.ExecuteTemplate();
         }
+
+        internal object GetStavkeByIznajmljivanjeId(Iznajmljivanje i)
+        {
+            var so = new GetStavkeByIznajmljivanjeIdSO(i.Id);
+            so.ExecuteTemplate();
+            return so.Result; // List<StavkaIznajmljivanja>
+        }
+
     }
 }
