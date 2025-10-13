@@ -24,10 +24,12 @@ namespace Client.GuiController
         private MainCoordinator()
         {
             personGuiController = new PersonGuiController();
+            rentGuiController = new RentGuiController();
         }
 
         private FrmMain frmMain;
         private PersonGuiController personGuiController;
+        private RentGuiController rentGuiController;
 
         internal void ShowFrmMain()
         {
@@ -44,6 +46,14 @@ namespace Client.GuiController
         internal void ShowManagePersonPanel()
         {
             frmMain.ChangePanel(personGuiController.CreateManagePerson());
+        }
+        internal void ShowAddRentPanel()
+        {
+            frmMain.ChangePanel(rentGuiController.CreateAddRent());
+        }
+        internal void ShowManageRentPanel()
+        {
+            frmMain.ChangePanel(rentGuiController.CreateManageRent());
         }
     }
 }

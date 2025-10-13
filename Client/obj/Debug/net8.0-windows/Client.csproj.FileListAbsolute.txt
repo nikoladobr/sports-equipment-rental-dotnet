@@ -68,3 +68,5 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Cli
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Client.UserControls.UCAddPerson.resources
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Client.UserControls.UCManagePerson.resources
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Client.sourcelink.json
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Client.UserControls.UCAddRent.resources
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Client\obj\Debug\net8.0-windows\Client.UserControls.UCManageRent.resources

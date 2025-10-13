@@ -12,8 +12,6 @@ namespace Common.Domain
         public int Id { get; set; }
         public int Smena { get; set; }
 
-
-
         public string TableName => "TerminDezurstva";
 
         public string Values => $"'{Smena}'";

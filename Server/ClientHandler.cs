@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Server
@@ -61,10 +62,13 @@ namespace Server
                 {
                     
                     case Operation.CreateOsoba:
-                        Controller.Instance.AddPerson(serializer.ReadType<Osoba>(req.Argument));
+                        Controller.Instance.AddOsoba(serializer.ReadType<Osoba>(req.Argument));
                         break;
                     case Operation.Login:
                         r.Result = Controller.Instance.Login(serializer.ReadType<Zaposleni>(req.Argument));
+                        break;
+                    case Operation.GetAllOprema:
+                        r.Result = Controller.Instance.GetAllOprema();
                         break;
                     case Operation.GetAllKategorijaOsobe:
                         r.Result = Controller.Instance.GetAllKategorijaOsobe();
@@ -72,17 +76,31 @@ namespace Server
                     case Operation.GetAllOsoba:
                         r.Result = Controller.Instance.GetAllOsoba();
                         break;
+                    case Operation.GetAllZaposleni:
+                        r.Result = Controller.Instance.GetAllZaposleni();
+                        break;
+                    case Operation.GetOsobaById:
+                        r.Result = Controller.Instance.GetOsobaById(serializer.ReadType<Osoba>(req.Argument));
+                        break;
                     case Operation.RemoveOsoba:
                         Controller.Instance.RemoveOsoba(serializer.ReadType<Osoba>(req.Argument));
                         break;
                     case Operation.SearchOsoba:
                         r.Result = Controller.Instance.SearchOsoba(serializer.ReadType<Osoba>(req.Argument));
                         break;
-                    case Operation.GetOsobaById:
-                        r.Result = Controller.Instance.GetOsobaById(serializer.ReadType<Osoba>(req.Argument));
-                        break;
                     case Operation.UpdateOsoba:
                         Controller.Instance.UpdateOsoba(serializer.ReadType<Osoba>(req.Argument));
+                        break;
+                    case Operation.CreateIznajmljivanje:
+                        Controller.Instance.AddIznajmljivanje(serializer.ReadType<Iznajmljivanje>(req.Argument));
+                        break;
+                    case Operation.SearchIznajmljivanje:                        
+                        var krit = ((JsonElement)req.Argument).Deserialize<Iznajmljivanje>();
+                        r.Result = Controller.Instance.SearchIznajmljivanje(krit);
+                        break;
+                    case Operation.GetIznajmljivanjeById:                        
+                        var iArg = ((JsonElement)req.Argument).Deserialize<Iznajmljivanje>();
+                        r.Result = Controller.Instance.GetIznajmljivanjeById(iArg);
                         break;
                 }
             }

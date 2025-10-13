@@ -63,6 +63,10 @@ namespace Client.GuiController
             Response response = Communication.Instance.Login(z);
             if (response.ExceptionMessage == null)
             {
+                Zaposleni ulogovani = (Zaposleni)response.Result;
+
+                Session.Instance.Zaposleni = ulogovani;
+
                 MessageBox.Show("Корисничко име и шифра су исправни.");
                 frmLogin.Visible = false;
                 MainCoordinator.Instance.ShowFrmMain();

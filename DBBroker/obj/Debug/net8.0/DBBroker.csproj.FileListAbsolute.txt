@@ -13,3 +13,4 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\refint\DBBroker.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.pdb
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\ref\DBBroker.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.sourcelink.json

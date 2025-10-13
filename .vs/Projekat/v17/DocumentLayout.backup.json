@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2BCACBE-240A-4976-A7B8-FC13C059E9F7}|Client\\Client.csproj|c:\\users\\nikola-pc\\desktop\\projekat\\projekat\\client\\usercontrols\\ucmanageperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2BCACBE-240A-4976-A7B8-FC13C059E9F7}|Client\\Client.csproj|solutionrelative:client\\usercontrols\\ucmanageperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2BCACBE-240A-4976-A7B8-FC13C059E9F7}|Client\\Client.csproj|c:\\users\\nikola-pc\\desktop\\projekat\\projekat\\client\\usercontrols\\ucmanagerent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D2BCACBE-240A-4976-A7B8-FC13C059E9F7}|Client\\Client.csproj|solutionrelative:client\\usercontrols\\ucmanagerent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,15 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UCManagePerson.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Client\\UserControls\\UCManagePerson.cs",
-              "RelativeDocumentMoniker": "Client\\UserControls\\UCManagePerson.cs",
-              "ToolTip": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Client\\UserControls\\UCManagePerson.cs",
-              "RelativeToolTip": "Client\\UserControls\\UCManagePerson.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAwD4AAAAwAAAAAAAAAA==",
+              "Title": "UCManageRent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Client\\UserControls\\UCManageRent.cs",
+              "RelativeDocumentMoniker": "Client\\UserControls\\UCManageRent.cs",
+              "ToolTip": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Client\\UserControls\\UCManageRent.cs [Design]",
+              "RelativeToolTip": "Client\\UserControls\\UCManageRent.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T22:16:06.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T23:51:33.167Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

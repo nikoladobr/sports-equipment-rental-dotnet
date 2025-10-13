@@ -15,10 +15,6 @@ namespace Common.Domain
         public string Email { get; set; }
         public KategorijaOsobe KategorijaOsobe { get; set; }
 
-        
-
-        public int KategorijaId => KategorijaOsobe?.Id ?? 0;
-
         public string TableName => "Osoba";
 
         public string Values => $"'{Ime}', '{Prezime}', '{Email}', {(KategorijaOsobe?.Id.ToString() ?? "NULL")}";

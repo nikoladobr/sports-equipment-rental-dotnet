@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Server.SystemOperation
 {
-    public class SearchPersonSO : SystemOperationBase
+    public class SearchOsobaSO : SystemOperationBase
     {
         private readonly Osoba o;
         public List<Osoba> Result { get; private set; }
 
-        public SearchPersonSO(Osoba o) 
+        public SearchOsobaSO(Osoba o) 
         {
             this.o = o;
         }

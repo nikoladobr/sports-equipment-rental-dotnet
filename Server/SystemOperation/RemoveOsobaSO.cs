@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Server.SystemOperation
 {
-    public class RemovePersonSO : SystemOperationBase
+    public class RemoveOsobaSO : SystemOperationBase
     {
         private readonly Osoba o;
 
-        public RemovePersonSO(Osoba o)
+        public RemoveOsobaSO(Osoba o)
         {
             this.o = o;
             

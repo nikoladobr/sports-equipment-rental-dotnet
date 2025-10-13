@@ -20,9 +20,7 @@ namespace Client.GuiController
         internal Control CreateAddPerson()
         {
             addPerson = new UCAddPerson();
-            o = new Osoba();
-            MessageBox.Show("Систем је креирао особу");
-            addPerson.BtnAddPerson.Click += AddPerson;
+            addPerson.BtnAddPerson.Click += AddOsoba;
             return addPerson;
         }
 
@@ -38,9 +36,9 @@ namespace Client.GuiController
             managePerson.CbKategorija.DataSource = kategorije;
             managePerson.CbKategorija.SelectedIndex = 0;
 
-            managePerson.BtnSearchPerson.Click += SearchPerson;
-            managePerson.BtnShowPerson.Click += ShowPerson;
-            managePerson.BtnEditPerson.Click += EditPerson;
+            managePerson.BtnSearchPerson.Click += SearchOsoba;
+            managePerson.BtnShowPerson.Click += ShowOsoba;
+            managePerson.BtnEditPerson.Click += EditOsoba;
             managePerson.BtnEditPerson.Enabled = false;
             managePerson.BtnRemovePerson.Enabled = false;
             managePerson.BtnShowPerson.Enabled = false;
@@ -48,28 +46,28 @@ namespace Client.GuiController
             managePerson.DgvOsobe.SelectionChanged += (s, e) =>
                 managePerson.BtnShowPerson.Enabled = managePerson.DgvOsobe.SelectedRows.Count > 0;
 
-            managePerson.BtnRemovePerson.Click += RemovePerson;
+            managePerson.BtnRemovePerson.Click += RemoveOsoba;
 
             return managePerson;
         }
 
-        private void AddPerson(object? sender, EventArgs e)
+        private void AddOsoba(object? sender, EventArgs e)
         {
             if (!addPerson.Validacija())
             {
-                MessageBox.Show("Popunite lepo sva polja...");
+                MessageBox.Show("Попуните сва поља.");
                 return;
             }
-
+            o = new Osoba();
             o.Ime = addPerson.TxtIme.Text;
             o.Prezime = addPerson.TxtPrezime.Text;
             o.Email = addPerson.TxtEmail.Text;
             o.KategorijaOsobe = (KategorijaOsobe)addPerson.CbKategorija.SelectedItem;
 
-            Response response = Communication.Instance.CreatePerson(o);
+            Response response = Communication.Instance.CreateOsoba(o);
             if (response.ExceptionMessage == null)
             {
-                MessageBox.Show("Систем је запамтио особу.");
+                MessageBox.Show("Систем је креирао особу.");
             }
             else
             {
@@ -77,11 +75,11 @@ namespace Client.GuiController
             }
         }
 
-        private void RemovePerson(object? sender, EventArgs e)
+        private void RemoveOsoba(object? sender, EventArgs e)
         {
             Osoba osoba = (Osoba)managePerson.DgvOsobe.SelectedRows[0].DataBoundItem;
 
-            Response response = Communication.Instance.RemovePerson(osoba);
+            Response response = Communication.Instance.RemoveOsoba(osoba);
             if (response.ExceptionMessage == null)
             {
                 MessageBox.Show("Систем је обрисао особу.");
@@ -92,7 +90,7 @@ namespace Client.GuiController
             }
         }
 
-        private void SearchPerson(object? sender, EventArgs e)
+        private void SearchOsoba(object? sender, EventArgs e)
         {
             managePerson.BtnEditPerson.Enabled = false;
             managePerson.BtnRemovePerson.Enabled = false;
@@ -106,7 +104,8 @@ namespace Client.GuiController
                 KategorijaOsobe = managePerson.CbKategorija.SelectedItem as KategorijaOsobe
             };
 
-            var osobe = Communication.Instance.SearchPerson(kriterijum) ?? new List<Osoba>();
+            
+            var osobe = Communication.Instance.SearchOsoba(kriterijum) ?? new List<Osoba>();
             managePerson.DgvOsobe.DataSource = new BindingList<Osoba>(osobe);
 
             MessageBox.Show(osobe.Count > 0
@@ -114,7 +113,7 @@ namespace Client.GuiController
                 : "Систем не може да нађе особе по задатим критеријумима.");
         }
 
-        private void ShowPerson(object? sender, EventArgs e)
+        private void ShowOsoba(object? sender, EventArgs e)
         {
             if (managePerson.DgvOsobe.SelectedRows.Count == 0)
             {
@@ -123,10 +122,18 @@ namespace Client.GuiController
             }
 
             var selektovana = managePerson.DgvOsobe.SelectedRows[0].DataBoundItem as Osoba;
-            if (selektovana == null) { MessageBox.Show("Грешка при читању особе."); return; }
+            if (selektovana == null) 
+            { 
+                MessageBox.Show("Грешка при читању особе."); 
+                return; 
+            }
 
-            var osoba = Communication.Instance.GetPersonById(new Osoba { Id = selektovana.Id });
-            if (osoba == null) { MessageBox.Show("Систем не може да нађе особу."); return; }
+            Osoba osoba = Communication.Instance.GetOsobaById(new Osoba { Id = selektovana.Id });
+            if (osoba == null) 
+            { 
+                MessageBox.Show("Систем не може да нађе особу."); 
+                return; 
+            }
 
             managePerson.TxtIme.Text = osoba.Ime;
             managePerson.TxtPrezime.Text = osoba.Prezime;
@@ -142,8 +149,10 @@ namespace Client.GuiController
                 managePerson.CbKategorija.DataSource = kategorije;
             }
 
-            if (targetId > 0) managePerson.CbKategorija.SelectedValue = targetId;
-            else managePerson.CbKategorija.SelectedIndex = 0;
+            if (targetId > 0) 
+                managePerson.CbKategorija.SelectedValue = targetId;
+            else 
+                managePerson.CbKategorija.SelectedIndex = 0;
 
             MessageBox.Show("Систем је нашао особу.");
 
@@ -151,7 +160,7 @@ namespace Client.GuiController
             managePerson.BtnRemovePerson.Enabled = true;
         }
 
-        private void EditPerson(object? sender, EventArgs e)
+        private void EditOsoba(object? sender, EventArgs e)
         {
             if (managePerson.DgvOsobe.SelectedRows.Count == 0)
             {
@@ -160,11 +169,15 @@ namespace Client.GuiController
             }
 
             Osoba staraOsoba = managePerson.DgvOsobe.SelectedRows[0].DataBoundItem as Osoba;
-            if (staraOsoba == null) { MessageBox.Show("Грешка при читању особе."); return; }
+            if (staraOsoba == null) 
+            { 
+                MessageBox.Show("Грешка при читању особе."); 
+                return; 
+            }
 
             if (!managePerson.Validacija())
             {
-                MessageBox.Show("Popunite lepo sva polja...");
+                MessageBox.Show("Неисправан унос.");
                 return;
             }
 
@@ -177,19 +190,18 @@ namespace Client.GuiController
                 KategorijaOsobe = managePerson.CbKategorija.SelectedItem as KategorijaOsobe
             };
 
-            if (string.IsNullOrWhiteSpace(o.Ime) || string.IsNullOrWhiteSpace(o.Prezime))
-            {
-                MessageBox.Show("Попуните обавезна поља (Име, Презиме).");
-                return;
-            }
+            
 
-            var resp = Communication.Instance.UpdatePerson(o);
+            var resp = Communication.Instance.UpdateOsoba(o);
             if (resp.ExceptionMessage == null)
             {
                 MessageBox.Show("Систем је запамтио особу.");
-
+                managePerson.TxtIme.Text = "";
+                managePerson.TxtPrezime.Text = "";
+                managePerson.TxtEmail.Text = "";
+                
                 //refresh tabele
-                SearchPerson(null, EventArgs.Empty);
+                SearchOsoba(null, EventArgs.Empty);
             }
             else
             {

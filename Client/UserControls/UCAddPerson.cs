@@ -50,7 +50,7 @@ namespace Client.UserControls
             }
             if (!txtEmail.Text.Contains('@'))
             {
-                MessageBox.Show("Neispravan unos emaila (@)");
+                MessageBox.Show("Унета емаил адреса није валидна.");
                 txtEmail.BackColor = Color.Salmon;
                 isValid = false;
             }

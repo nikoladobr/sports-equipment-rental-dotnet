@@ -10,40 +10,43 @@ namespace DBBroker
         {
             connection = new DbConnection();
         }
-
         public void Rollback()
         {
             connection.Rollback();
         }
-
         public void Commit()
         {
             connection.Commit();
         }
-
         public void BeginTransaction()
         {
             connection.BeginTransaction();
         }
-
-        public void Add(IEntity obj)
+        public void OpenConnection()
         {
-            SqlCommand cmd = connection.CreateCommand();
-            cmd.CommandText = $"insert into {obj.TableName} values({obj.Values} )";
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
+            connection.OpenConnection();
         }
-
         public void CloseConnection()
         {
             connection.CloseConnection();
         }
 
-        public void OpenConnection()
+        public void Add(IEntity obj)
         {
-            connection.OpenConnection();
-        }
+            using SqlCommand cmd = connection.CreateCommand();
 
+            if (obj is Common.Domain.Iznajmljivanje)
+            {
+                cmd.CommandText =
+                    $"INSERT INTO Iznajmljivanje (ukupanIznos, vremeOd, idZaposleni, idOsoba) " +
+                    $"VALUES({obj.Values})";
+            }
+            else
+            {
+                cmd.CommandText = $"INSERT INTO {obj.TableName} VALUES({obj.Values})";
+            }
+            cmd.ExecuteNonQuery();
+        }
 
         public List<IEntity> GetAll(IEntity entity)
         {
@@ -64,6 +67,7 @@ namespace DBBroker
             command.Dispose();
             return list;
         }
+
         public void Remove(IEntity obj, string condition)
         {
             SqlCommand cmd = connection.CreateCommand();
@@ -80,5 +84,17 @@ namespace DBBroker
             cmd.Dispose();
         }
 
+        public List<IEntity> GetJoin(IEntity mainEntity, string joinClause, string condition = "1=1")
+        {
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = $"SELECT * FROM {mainEntity.TableName} {joinClause} WHERE {condition}";
+            SqlDataReader reader = command.ExecuteReader();
+
+            List<IEntity> list = mainEntity.GetReaderList(reader);
+            reader.Close();
+            command.Dispose();
+
+            return list;
+        }
     }
 }

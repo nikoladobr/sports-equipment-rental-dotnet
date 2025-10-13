@@ -10,7 +10,13 @@
     <Compile Update="UserControls\UCAddPerson.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControls\UCAddRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\UCManagePerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UCManageRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

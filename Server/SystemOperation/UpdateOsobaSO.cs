@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Server.SystemOperation
 {
-    public class UpdatePersonSO : SystemOperationBase
+    public class UpdateOsobaSO : SystemOperationBase
     {
 
         private readonly Osoba o;
-        public UpdatePersonSO(Osoba o) { this.o = o; }
+        public UpdateOsobaSO(Osoba o) { this.o = o; }
 
         protected override void ExecuteConcreteOperation()
         {

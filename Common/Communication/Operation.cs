@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.
+    Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,12 @@ namespace Common.Communication
         RemoveOsoba,
         SearchOsoba,
         GetOsobaById,
-        UpdateOsoba
+        UpdateOsoba,
+        GetAllOprema,
+        CreateIznajmljivanje,
+        GetAllZaposleni,
+        SearchIznajmljivanje,
+        GetIznajmljivanjeById,
+        GetIznajmljivanjaByAmountRange
     }
 }

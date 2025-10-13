@@ -69,3 +69,4 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\Ser
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\ref\Server.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\bin\Debug\net8.0-windows\Server.dll.config
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\Server.sourcelink.json

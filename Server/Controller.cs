@@ -31,60 +31,83 @@ namespace Server
             return so.Result;
         }
 
+        //Get
         internal object GetAllKategorijaOsobe()
         {
-           try
-            {
-                broker.OpenConnection();
-                return broker.GetAll(new KategorijaOsobe()).Cast<KategorijaOsobe>().ToList();
-            }
-            finally
-            {
-                broker.CloseConnection();
-            }
-        }
-
-        internal void AddPerson(Osoba osoba)
-        {
-            AddPersonSO addPerson = new AddPersonSO(osoba);
-            addPerson.ExecuteTemplate();
-        }
-
-        internal object GetAllOsoba()
-        {
-            try
-            {
-                broker.OpenConnection();
-                return broker.GetAll(new Osoba()).Cast<Osoba>().ToList();
-            }
-            finally
-            {
-                broker.CloseConnection();
-            }
-        }
-
-        internal void RemoveOsoba(Osoba osoba)
-        {
-            RemovePersonSO removePerson = new RemovePersonSO(osoba);
-            removePerson.ExecuteTemplate();
-        }
-
-        internal List<Osoba> SearchOsoba(Osoba o)
-        {
-            SearchPersonSO searchPerson = new SearchPersonSO(o);
-            searchPerson.ExecuteTemplate();
-            return searchPerson.Result;
-        }
-
-        internal Osoba GetOsobaById(Osoba o)
-        {
-            GetPersonByIdSO so = new GetPersonByIdSO(o);
+            GetAllKategorijaOsobeSO so = new();
             so.ExecuteTemplate();
             return so.Result;
         }
+        internal object GetAllOsoba()
+        {
+            GetAllOsobaSO so = new();
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+        internal object GetAllOprema()
+        {
+            GetAllOpremaSO so = new();
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+        internal object GetAllZaposleni()
+        {
+            GetAllZaposleniSO so = new();
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+
+        //GetBy
+        internal Osoba GetOsobaById(Osoba o)
+        {
+            GetOsobaByIdSO so = new GetOsobaByIdSO(o);
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+        internal object GetIznajmljivanjeById(Iznajmljivanje i)
+        {
+            var so = new GetIznajmljivanjeByIdSO(i.Id);
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+
+        //Add
+        internal void AddOsoba(Osoba osoba)
+        {
+            AddOsobaSO addOsoba = new AddOsobaSO(osoba);
+            addOsoba.ExecuteTemplate();
+        }
+        internal void AddIznajmljivanje(Iznajmljivanje iznajmljivanje)
+        {
+            AddIznajmljivanjeSO addIznajmljivanje = new AddIznajmljivanjeSO(iznajmljivanje);
+            addIznajmljivanje.ExecuteTemplate();
+        }
+
+        //Remove
+        internal void RemoveOsoba(Osoba osoba)
+        {
+            RemoveOsobaSO removePerson = new RemoveOsobaSO(osoba);
+            removePerson.ExecuteTemplate();
+        }
+
+        //Search
+        internal List<Osoba> SearchOsoba(Osoba o)
+        {
+            SearchOsobaSO searchPerson = new SearchOsobaSO(o);
+            searchPerson.ExecuteTemplate();
+            return searchPerson.Result;
+        }
+        internal object SearchIznajmljivanje(Iznajmljivanje krit)
+        {
+            var so = new SearchIznajmljivanjeSO(krit);
+            so.ExecuteTemplate();
+            return so.Result;
+        }
+
+        //Update
         internal void UpdateOsoba(Osoba o)
         {
-            UpdatePersonSO so = new UpdatePersonSO(o);
+            UpdateOsobaSO so = new UpdateOsobaSO(o);
             so.ExecuteTemplate();
         }
     }

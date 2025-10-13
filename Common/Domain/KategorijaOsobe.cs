@@ -13,11 +13,8 @@ namespace Common.Domain
         public string Naziv { get; set; }
 
         public string TableName => "KategorijaOsobe";
-        public string Values => $"'{Id}','{Naziv}'";
-        public override string? ToString()
-        {
-            return Naziv;
-        }
+        public string Values => $"'{Naziv}'";
+        
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {

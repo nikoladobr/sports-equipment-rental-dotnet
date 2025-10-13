@@ -32,13 +32,16 @@
             особаToolStripMenuItem = new ToolStripMenuItem();
             itemAddPerson = new ToolStripMenuItem();
             itemManagePerson = new ToolStripMenuItem();
+            изнајмљивањеToolStripMenuItem = new ToolStripMenuItem();
+            itemAddRent = new ToolStripMenuItem();
+            itemManageRent = new ToolStripMenuItem();
             pnlMain = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { особаToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { особаToolStripMenuItem, изнајмљивањеToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(643, 24);
@@ -55,14 +58,33 @@
             // itemAddPerson
             // 
             itemAddPerson.Name = "itemAddPerson";
-            itemAddPerson.Size = new Size(125, 22);
+            itemAddPerson.Size = new Size(180, 22);
             itemAddPerson.Text = "Креирај";
             // 
             // itemManagePerson
             // 
             itemManagePerson.Name = "itemManagePerson";
-            itemManagePerson.Size = new Size(125, 22);
+            itemManagePerson.Size = new Size(180, 22);
             itemManagePerson.Text = "Управљај";
+            // 
+            // изнајмљивањеToolStripMenuItem
+            // 
+            изнајмљивањеToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { itemAddRent, itemManageRent });
+            изнајмљивањеToolStripMenuItem.Name = "изнајмљивањеToolStripMenuItem";
+            изнајмљивањеToolStripMenuItem.Size = new Size(102, 20);
+            изнајмљивањеToolStripMenuItem.Text = "Изнајмљивање";
+            // 
+            // itemAddRent
+            // 
+            itemAddRent.Name = "itemAddRent";
+            itemAddRent.Size = new Size(180, 22);
+            itemAddRent.Text = "Креирај";
+            // 
+            // itemManageRent
+            // 
+            itemManageRent.Name = "itemManageRent";
+            itemManageRent.Size = new Size(180, 22);
+            itemManageRent.Text = "Управљај";
             // 
             // pnlMain
             // 
@@ -95,5 +117,8 @@
         private Panel pnlMain;
         private ToolStripMenuItem itemManagePerson;
         private ToolStripMenuItem itemAddPerson;
+        private ToolStripMenuItem изнајмљивањеToolStripMenuItem;
+        private ToolStripMenuItem itemAddRent;
+        private ToolStripMenuItem itemManageRent;
     }
 }

@@ -15,8 +15,6 @@ namespace Common.Domain
         public string KorisnickoIme { get; set; }
         public string Sifra { get; set; }
 
-
-
         public string TableName => "Zaposleni";
 
         public string Values => $"'{Ime}', '{Prezime}', '{KorisnickoIme}', '{Sifra}'";

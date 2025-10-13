@@ -32,7 +32,6 @@
             btnSearchPerson = new Button();
             txtEmail = new TextBox();
             txtPrezime = new TextBox();
-            txtIme = new TextBox();
             lblKategorija = new Label();
             lblEmail = new Label();
             lblPrezime = new Label();
@@ -41,6 +40,7 @@
             btnEditPerson = new Button();
             btnRemovePerson = new Button();
             btnShowPerson = new Button();
+            txtIme = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvOsobe).BeginInit();
             SuspendLayout();
             // 
@@ -75,13 +75,6 @@
             txtPrezime.Name = "txtPrezime";
             txtPrezime.Size = new Size(153, 23);
             txtPrezime.TabIndex = 14;
-            // 
-            // txtIme
-            // 
-            txtIme.Location = new Point(104, 16);
-            txtIme.Name = "txtIme";
-            txtIme.Size = new Size(153, 23);
-            txtIme.TabIndex = 13;
             // 
             // lblKategorija
             // 
@@ -154,6 +147,13 @@
             btnShowPerson.Text = "Прикажи";
             btnShowPerson.UseVisualStyleBackColor = true;
             // 
+            // txtIme
+            // 
+            txtIme.Location = new Point(104, 16);
+            txtIme.Name = "txtIme";
+            txtIme.Size = new Size(153, 23);
+            txtIme.TabIndex = 13;
+            // 
             // UCManagePerson
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -184,7 +184,6 @@
         private Button btnSearchPerson;
         private TextBox txtEmail;
         private TextBox txtPrezime;
-        private TextBox txtIme;
         private Label lblKategorija;
         private Label lblEmail;
         private Label lblPrezime;
@@ -193,6 +192,7 @@
         private Button btnEditPerson;
         private Button btnRemovePerson;
         private Button btnShowPerson;
+        private TextBox txtIme;
 
         public Button BtnSearchPerson { get => btnSearchPerson; set => btnSearchPerson = value; }
         public Button BtnEditPerson { get => btnEditPerson; set => btnEditPerson = value; }

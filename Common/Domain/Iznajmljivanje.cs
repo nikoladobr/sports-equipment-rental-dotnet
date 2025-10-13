@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +11,16 @@ namespace Common.Domain
     public class Iznajmljivanje : IEntity
     {
         public int Id { get; set; }
-        public string Opis { get; set; }
-        public double UkupanIznos { get; set; }
+        public decimal UkupanIznos { get; set; }
         public DateTime VremeOd { get; set; }
         public Zaposleni Zaposleni { get; set; }
         public Osoba Osoba { get; set; }
+        public List<StavkaIznajmljivanja> Stavke { get; set; } = new List<StavkaIznajmljivanja>();
 
 
         public string TableName => "Iznajmljivanje";
 
-        public string Values => $"'{Opis}', '{UkupanIznos}', '{VremeOd}', {Zaposleni.Id}, {Osoba.Id}";
+        public string Values => $"{UkupanIznos.ToString(System.Globalization.CultureInfo.InvariantCulture)}, '{VremeOd:yyyy-MM-dd HH:mm:ss}', {(Zaposleni?.Id ?? 0)}, {(Osoba?.Id ?? 0)}";
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
         {
@@ -28,29 +29,16 @@ namespace Common.Domain
             {
                 Iznajmljivanje i = new Iznajmljivanje
                 {
-                    Id = (int)reader["id"],
-                    Opis = (string)reader["opis"],
-                    UkupanIznos = (double)reader["ukupanIznos"],
+                    Id = (int)reader["idIznajmljivanje"],
+                    UkupanIznos = (decimal)reader["ukupanIznos"],
                     VremeOd = (DateTime)reader["vremeOd"],
                     Zaposleni = new Zaposleni
                     {
-                        Id = (int)reader["id"],
-                        Ime = (string)reader["ime"],
-                        Prezime = (string)reader["prezime"],
-                        KorisnickoIme = (string)reader["korisnickoIme"],
-                        Sifra = (string)reader["sifra"]
+                        Id = (int)reader["idZaposleni"]
                     },
                     Osoba = new Osoba
                     {
-                        Id = (int)reader["id"],
-                        Ime  = (string)reader["ime"],
-                        Prezime = (string)reader["prezime"],
-                        Email = (string)reader["email"],
-                        KategorijaOsobe = new KategorijaOsobe
-                        {
-                            Id = (int)reader["id"],
-                            Naziv = (string)reader["naziv"]
-                        }
+                        Id = (int)reader["idOsoba"]
                     }
                 };
                 iznajmljivanja.Add(i);

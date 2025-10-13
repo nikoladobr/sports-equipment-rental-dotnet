@@ -18,6 +18,8 @@ namespace Client
             InitializeComponent();
             itemAddPerson.Click += (s, a) => MainCoordinator.Instance.ShowAddPersonPanel();
             itemManagePerson.Click += (s,a) => MainCoordinator.Instance.ShowManagePersonPanel();
+            itemAddRent.Click += (s, a) => MainCoordinator.Instance.ShowAddRentPanel();
+            itemManageRent.Click += (s, a) => MainCoordinator.Instance.ShowManageRentPanel();
         }
         public void ChangePanel(Control control)
         {

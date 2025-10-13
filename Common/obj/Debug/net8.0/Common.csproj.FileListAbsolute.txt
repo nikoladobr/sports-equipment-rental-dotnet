@@ -10,3 +10,4 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\Common.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\refint\Common.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\Common.pdb
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\ref\Common.dll
+C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\Common.sourcelink.json
