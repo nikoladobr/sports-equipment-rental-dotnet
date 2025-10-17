@@ -18,38 +18,6 @@ namespace Client.UserControls
         {
             InitializeComponent();
 
-            var osobe = new List<Osoba>();
-
-            var kategorije = Communication.Instance.GetAllKategorijaOsobe() ?? new List<KategorijaOsobe>();
-            kategorije.Insert(0, new KategorijaOsobe { Id = 0, Naziv = "" });
-
-            cbKategorija.DisplayMember = "Naziv";
-            cbKategorija.ValueMember = "Id";
-            cbKategorija.DataSource = new BindingList<KategorijaOsobe>(kategorije);
-            cbKategorija.SelectedIndex = 0;
-
-            dgvOsobe.AutoGenerateColumns = false;
-            dgvOsobe.AllowUserToAddRows = false;
-            dgvOsobe.ReadOnly = true;
-
-            dgvOsobe.Columns.Clear();
-            dgvOsobe.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Ime", DataPropertyName = "Ime" });
-            dgvOsobe.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Prezime", DataPropertyName = "Prezime" });
-            dgvOsobe.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Email", DataPropertyName = "Email" });
-
-            var colKat = new DataGridViewComboBoxColumn
-            {
-                HeaderText = "Kategorija",
-                DataPropertyName = "KategorijaId",
-                DataSource = kategorije,
-                ValueMember = "Id",
-                DisplayMember = "Naziv",
-                ValueType = typeof(int),
-                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing
-            };
-            dgvOsobe.Columns.Add(colKat);
-
-            dgvOsobe.DataSource = new BindingList<Osoba>(osobe);
         }
         public bool Validacija()
         {

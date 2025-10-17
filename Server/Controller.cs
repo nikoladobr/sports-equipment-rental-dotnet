@@ -117,6 +117,22 @@ namespace Server
             so.ExecuteTemplate();
             return so.Result; // List<StavkaIznajmljivanja>
         }
+        internal void AddStavka(StavkaIznajmljivanja s)
+        {
+            var so = new AddStavkaIznajmljivanjaSO(s);
+            so.ExecuteTemplate();
+        }
 
+        internal void RemoveStavka(StavkaIznajmljivanja s)
+        {
+            var so = new RemoveStavkaIznajmljivanjaSO(s);
+            so.ExecuteTemplate();
+        }
+
+        internal void AddTerminDezurstva(TerminDezurstva terminDezurstva)
+        {
+            AddTerminDezurstvaSO addTerminDezurstva = new AddTerminDezurstvaSO(terminDezurstva);
+            addTerminDezurstva.ExecuteTemplate();
+        }
     }
 }

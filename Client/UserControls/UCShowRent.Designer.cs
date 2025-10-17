@@ -50,7 +50,8 @@
             lblCena = new Label();
             lblKolicina = new Label();
             btnPrikazi = new Button();
-            btnPromeni = new Button();
+            btnAddRentalItem = new Button();
+            btnObrisi = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvStavkeIznajmljivanja).BeginInit();
             SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             // 
             // dtpSince
             // 
+            dtpSince.Enabled = false;
             dtpSince.Format = DateTimePickerFormat.Custom;
             dtpSince.Location = new Point(108, 93);
             dtpSince.Name = "dtpSince";
@@ -81,6 +83,7 @@
             // 
             // cbOsoba
             // 
+            cbOsoba.Enabled = false;
             cbOsoba.FormattingEnabled = true;
             cbOsoba.Location = new Point(108, 35);
             cbOsoba.Name = "cbOsoba";
@@ -107,6 +110,7 @@
             // 
             // cbZaposleni
             // 
+            cbZaposleni.Enabled = false;
             cbZaposleni.FormattingEnabled = true;
             cbZaposleni.Location = new Point(108, 6);
             cbZaposleni.Name = "cbZaposleni";
@@ -133,7 +137,7 @@
             // cbOprema
             // 
             cbOprema.FormattingEnabled = true;
-            cbOprema.Location = new Point(108, 166);
+            cbOprema.Location = new Point(108, 142);
             cbOprema.Name = "cbOprema";
             cbOprema.Size = new Size(185, 23);
             cbOprema.TabIndex = 73;
@@ -141,14 +145,15 @@
             // dtpTo
             // 
             dtpTo.Format = DateTimePickerFormat.Custom;
-            dtpTo.Location = new Point(108, 254);
+            dtpTo.Location = new Point(108, 230);
             dtpTo.Name = "dtpTo";
             dtpTo.Size = new Size(185, 23);
             dtpTo.TabIndex = 72;
             // 
             // txtTrajanje
             // 
-            txtTrajanje.Location = new Point(108, 285);
+            txtTrajanje.Enabled = false;
+            txtTrajanje.Location = new Point(108, 261);
             txtTrajanje.Name = "txtTrajanje";
             txtTrajanje.Size = new Size(185, 23);
             txtTrajanje.TabIndex = 71;
@@ -156,14 +161,14 @@
             // txtCena
             // 
             txtCena.Enabled = false;
-            txtCena.Location = new Point(108, 196);
+            txtCena.Location = new Point(108, 172);
             txtCena.Name = "txtCena";
             txtCena.Size = new Size(185, 23);
             txtCena.TabIndex = 70;
             // 
             // txtKolicina
             // 
-            txtKolicina.Location = new Point(108, 225);
+            txtKolicina.Location = new Point(108, 201);
             txtKolicina.Name = "txtKolicina";
             txtKolicina.Size = new Size(185, 23);
             txtKolicina.TabIndex = 69;
@@ -171,7 +176,7 @@
             // txtIznos
             // 
             txtIznos.Enabled = false;
-            txtIznos.Location = new Point(108, 315);
+            txtIznos.Location = new Point(108, 291);
             txtIznos.Name = "txtIznos";
             txtIznos.Size = new Size(185, 23);
             txtIznos.TabIndex = 68;
@@ -179,7 +184,7 @@
             // lblOprema
             // 
             lblOprema.AutoSize = true;
-            lblOprema.Location = new Point(3, 169);
+            lblOprema.Location = new Point(3, 145);
             lblOprema.Name = "lblOprema";
             lblOprema.Size = new Size(54, 15);
             lblOprema.TabIndex = 67;
@@ -188,7 +193,7 @@
             // lblIznos
             // 
             lblIznos.AutoSize = true;
-            lblIznos.Location = new Point(3, 318);
+            lblIznos.Location = new Point(3, 294);
             lblIznos.Name = "lblIznos";
             lblIznos.Size = new Size(44, 15);
             lblIznos.TabIndex = 66;
@@ -197,7 +202,7 @@
             // lblTrajanje
             // 
             lblTrajanje.AutoSize = true;
-            lblTrajanje.Location = new Point(3, 288);
+            lblTrajanje.Location = new Point(3, 264);
             lblTrajanje.Name = "lblTrajanje";
             lblTrajanje.Size = new Size(54, 15);
             lblTrajanje.TabIndex = 65;
@@ -206,7 +211,7 @@
             // lblDo
             // 
             lblDo.AutoSize = true;
-            lblDo.Location = new Point(3, 258);
+            lblDo.Location = new Point(3, 234);
             lblDo.Name = "lblDo";
             lblDo.Size = new Size(25, 15);
             lblDo.TabIndex = 64;
@@ -215,7 +220,7 @@
             // lblCena
             // 
             lblCena.AutoSize = true;
-            lblCena.Location = new Point(3, 199);
+            lblCena.Location = new Point(3, 175);
             lblCena.Name = "lblCena";
             lblCena.Size = new Size(38, 15);
             lblCena.TabIndex = 63;
@@ -224,7 +229,7 @@
             // lblKolicina
             // 
             lblKolicina.AutoSize = true;
-            lblKolicina.Location = new Point(3, 228);
+            lblKolicina.Location = new Point(3, 204);
             lblKolicina.Name = "lblKolicina";
             lblKolicina.Size = new Size(65, 15);
             lblKolicina.TabIndex = 62;
@@ -232,27 +237,37 @@
             // 
             // btnPrikazi
             // 
-            btnPrikazi.Location = new Point(414, 344);
+            btnPrikazi.Location = new Point(325, 350);
             btnPrikazi.Name = "btnPrikazi";
-            btnPrikazi.Size = new Size(129, 51);
+            btnPrikazi.Size = new Size(132, 38);
             btnPrikazi.TabIndex = 74;
             btnPrikazi.Text = "Прикажи";
             btnPrikazi.UseVisualStyleBackColor = true;
             // 
-            // btnPromeni
+            // btnAddRentalItem
             // 
-            btnPromeni.Location = new Point(135, 344);
-            btnPromeni.Name = "btnPromeni";
-            btnPromeni.Size = new Size(129, 51);
-            btnPromeni.TabIndex = 75;
-            btnPromeni.Text = "Промени";
-            btnPromeni.UseVisualStyleBackColor = true;
+            btnAddRentalItem.Location = new Point(131, 320);
+            btnAddRentalItem.Name = "btnAddRentalItem";
+            btnAddRentalItem.Size = new Size(132, 38);
+            btnAddRentalItem.TabIndex = 75;
+            btnAddRentalItem.Text = "Додај ставку";
+            btnAddRentalItem.UseVisualStyleBackColor = true;
+            // 
+            // btnObrisi
+            // 
+            btnObrisi.Location = new Point(491, 350);
+            btnObrisi.Name = "btnObrisi";
+            btnObrisi.Size = new Size(132, 38);
+            btnObrisi.TabIndex = 76;
+            btnObrisi.Text = "Обриши ставку";
+            btnObrisi.UseVisualStyleBackColor = true;
             // 
             // UCShowRent
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnPromeni);
+            Controls.Add(btnObrisi);
+            Controls.Add(btnAddRentalItem);
             Controls.Add(btnPrikazi);
             Controls.Add(cbOprema);
             Controls.Add(dtpTo);
@@ -306,6 +321,8 @@
         private Label lblKolicina;
         private Button btnPrikazi;
         private Button btnPromeni;
+        private Button btnAddRentalItem;
+        private Button btnObrisi;
 
         public TextBox TxtIznos { get => txtIznos; set => txtIznos = value; }
         public TextBox TxtKolicina { get => txtKolicina; set => txtKolicina = value; }
@@ -329,5 +346,7 @@
         public DateTimePicker DtpSince { get => dtpSince; set => dtpSince = value; }
         public DataGridView DgvStavkeIznajmljivanja { get => dgvStavkeIznajmljivanja; set => dgvStavkeIznajmljivanja = value; }
         public Button BtnPrikazi { get => btnPrikazi; set => btnPrikazi = value; }
+        public Button BtnObrisi { get => btnObrisi; set => btnObrisi = value; }
+        public Button BtnAddRentalItem { get => btnAddRentalItem; set => btnAddRentalItem = value; }
     }
 }

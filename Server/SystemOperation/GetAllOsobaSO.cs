@@ -15,8 +15,8 @@ namespace Server.SystemOperation
 
         protected override void ExecuteConcreteOperation()
         {
-            List<Osoba> osoba = broker.GetAll(new Osoba()).Cast<Osoba>().ToList();
-            Result = new BindingList<Osoba>(osoba);
+            var list = broker.GetByCondition(new Osoba(), "1=1"); // ovo aktivira JOIN iz Osoba
+            Result = new BindingList<Osoba>(list?.Cast<Osoba>().ToList() ?? new List<Osoba>());
         }
     }
 }

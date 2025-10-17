@@ -16,6 +16,8 @@ namespace Server
         public FrmServer()
         {
             InitializeComponent();
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)

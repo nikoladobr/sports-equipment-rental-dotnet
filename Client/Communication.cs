@@ -229,5 +229,46 @@ namespace Client
 
             return serializer.ReadType<List<StavkaIznajmljivanja>>(response.Result);
         }
+
+        internal void AddStavka(StavkaIznajmljivanja s)
+        {
+            var request = new Request
+            {
+                Operation = Operation.AddStavkaIznajmljivanja,
+                Argument = s
+            };
+            serializer.Send(request);
+            var response = serializer.Receive<Response>();
+            if (response.ExceptionMessage != null) throw new Exception(response.ExceptionMessage);
+        }
+
+        internal void RemoveStavka(StavkaIznajmljivanja s)
+        {
+            var request = new Request
+            {
+                Operation = Operation.RemoveStavkaIznajmljivanja,
+                Argument = s
+            };
+            serializer.Send(request);
+            var response = serializer.Receive<Response>();
+            if (response.ExceptionMessage != null) throw new Exception(response.ExceptionMessage);
+        }
+
+        internal Response AddTerminDezurstva(TerminDezurstva td)
+        {
+            Request request = new Request
+            {
+                Argument = td,
+                Operation = Operation.AddTerminDezurstva
+            };
+            serializer.Send(request);
+
+            Response response = serializer.Receive<Response>();
+            if (response.ExceptionMessage != null)
+            {
+                throw new Exception(response.ExceptionMessage);
+            }
+            return response;
+        }
     }
 }

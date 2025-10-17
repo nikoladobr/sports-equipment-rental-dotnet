@@ -23,8 +23,15 @@ namespace Common.Domain
 
         public string TableName => "StavkaIznajmljivanja";
 
-        public string Values => $"{(Iznajmljivanje?.Id ?? 0)}, {Rb}, {Cena.ToString(CultureInfo.InvariantCulture)}, '{VremeDo:yyyy-MM-dd HH:mm:ss}', {Trajanje}, {Iznos.ToString(CultureInfo.InvariantCulture)}, " +
-            $"{(Oprema?.Id ?? 0)}, {Kolicina}";
+        public string Values =>
+    $"{((Iznajmljivanje != null && Iznajmljivanje.Id > 0) ? Iznajmljivanje.Id : IdIznajmljivanje)}, " +
+    $"{Rb}, " +
+    $"{Cena.ToString(CultureInfo.InvariantCulture)}, " +
+    $"'{VremeDo:yyyy-MM-dd HH:mm:ss}', " +
+    $"{Trajanje}, " +
+    $"{Iznos.ToString(CultureInfo.InvariantCulture)}, " +
+    $"{(Oprema?.Id ?? 0)}, " +
+    $"{Kolicina}";
         public List<string> JoinTableNames => new List<string> { "Iznajmljivanje", "Oprema" };
 
         public List<string> JoinColumnNames => null;

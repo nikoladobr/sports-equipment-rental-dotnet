@@ -28,13 +28,21 @@ namespace Client.GuiController
         {
             managePerson = new UCManagePerson();
 
+            var osobe = new List<Osoba>();
+
             var kategorije = Communication.Instance.GetAllKategorijaOsobe() ?? new List<KategorijaOsobe>();
             kategorije.Insert(0, new KategorijaOsobe { Id = 0, Naziv = "" });
 
             managePerson.CbKategorija.DisplayMember = "Naziv";
             managePerson.CbKategorija.ValueMember = "Id";
-            managePerson.CbKategorija.DataSource = kategorije;
+            managePerson.CbKategorija.DataSource = new BindingList<KategorijaOsobe>(kategorije);
             managePerson.CbKategorija.SelectedIndex = 0;
+
+            managePerson.DgvOsobe.AutoGenerateColumns = true;
+            managePerson.DgvOsobe.AllowUserToAddRows = false;
+            managePerson.DgvOsobe.ReadOnly = true;
+            managePerson.DgvOsobe.Columns.Clear();
+            managePerson.DgvOsobe.DataSource = new BindingList<Osoba>(osobe);
 
             managePerson.BtnSearchPerson.Click += SearchOsoba;
             managePerson.BtnShowPerson.Click += ShowOsoba;
@@ -83,6 +91,7 @@ namespace Client.GuiController
             if (response.ExceptionMessage == null)
             {
                 MessageBox.Show("Систем је обрисао особу.");
+                SearchOsoba(null, EventArgs.Empty);
             }
             else
             {
@@ -107,6 +116,19 @@ namespace Client.GuiController
             
             var osobe = Communication.Instance.SearchOsoba(kriterijum) ?? new List<Osoba>();
             managePerson.DgvOsobe.DataSource = new BindingList<Osoba>(osobe);
+            var dgv = managePerson.DgvOsobe;
+            if (dgv.Columns.Contains("Ime"))
+                dgv.Columns["Ime"].HeaderText = "Име";
+            if (dgv.Columns.Contains("Prezime"))
+                dgv.Columns["Prezime"].HeaderText = "Презиме";
+            if (dgv.Columns.Contains("Email"))
+                dgv.Columns["Email"].HeaderText = "Емаил";
+            if (dgv.Columns.Contains("KategorijaOsobe"))
+                dgv.Columns["KategorijaOsobe"].HeaderText = "Категорија";
+            dgv.Columns[5].Visible = false;
+            dgv.Columns[6].Visible = false;
+            dgv.Columns[7].Visible = false;
+            dgv.Columns[8].Visible = false;
 
             MessageBox.Show(osobe.Count > 0
                 ? "Систем је нашао особе по задатим критеријумима."

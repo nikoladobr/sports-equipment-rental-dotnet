@@ -11,9 +11,14 @@ namespace Common.Domain
     {
         public int Id { get; set; }
         public string Naziv { get; set; }
-
+        public override string ToString()
+        {
+            return $"{Naziv}";
+        }
         public string TableName => "KategorijaOsobe";
         public string Values => $"'{Naziv}'";
+
+        
 
         public List<string> JoinConditions => null;
 

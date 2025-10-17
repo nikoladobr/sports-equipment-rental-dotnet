@@ -36,12 +36,14 @@
             itemAddRent = new ToolStripMenuItem();
             itemManageRent = new ToolStripMenuItem();
             pnlMain = new Panel();
+            терминДежурстваToolStripMenuItem = new ToolStripMenuItem();
+            itemAddDutyTerm = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { особаToolStripMenuItem, изнајмљивањеToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { особаToolStripMenuItem, изнајмљивањеToolStripMenuItem, терминДежурстваToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(643, 24);
@@ -58,13 +60,13 @@
             // itemAddPerson
             // 
             itemAddPerson.Name = "itemAddPerson";
-            itemAddPerson.Size = new Size(180, 22);
+            itemAddPerson.Size = new Size(125, 22);
             itemAddPerson.Text = "Креирај";
             // 
             // itemManagePerson
             // 
             itemManagePerson.Name = "itemManagePerson";
-            itemManagePerson.Size = new Size(180, 22);
+            itemManagePerson.Size = new Size(125, 22);
             itemManagePerson.Text = "Управљај";
             // 
             // изнајмљивањеToolStripMenuItem
@@ -94,6 +96,19 @@
             pnlMain.Size = new Size(643, 398);
             pnlMain.TabIndex = 1;
             // 
+            // терминДежурстваToolStripMenuItem
+            // 
+            терминДежурстваToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { itemAddDutyTerm });
+            терминДежурстваToolStripMenuItem.Name = "терминДежурстваToolStripMenuItem";
+            терминДежурстваToolStripMenuItem.Size = new Size(121, 20);
+            терминДежурстваToolStripMenuItem.Text = "Термин дежурства";
+            // 
+            // itemAddDutyTerm
+            // 
+            itemAddDutyTerm.Name = "itemAddDutyTerm";
+            itemAddDutyTerm.Size = new Size(180, 22);
+            itemAddDutyTerm.Text = "Убаци";
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -120,5 +135,7 @@
         private ToolStripMenuItem изнајмљивањеToolStripMenuItem;
         private ToolStripMenuItem itemAddRent;
         private ToolStripMenuItem itemManageRent;
+        private ToolStripMenuItem терминДежурстваToolStripMenuItem;
+        private ToolStripMenuItem itemAddDutyTerm;
     }
 }

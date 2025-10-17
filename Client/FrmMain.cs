@@ -20,6 +20,7 @@ namespace Client
             itemManagePerson.Click += (s,a) => MainCoordinator.Instance.ShowManagePersonPanel();
             itemAddRent.Click += (s, a) => MainCoordinator.Instance.ShowAddRentPanel();
             itemManageRent.Click += (s, a) => MainCoordinator.Instance.ShowManageRentPanel();
+            itemAddDutyTerm.Click += (s, a) => MainCoordinator.Instance.ShowAddDutyTermPanel();
         }
         public void ChangePanel(Control control)
         {

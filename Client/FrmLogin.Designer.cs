@@ -40,18 +40,18 @@
             lblUsername.AutoSize = true;
             lblUsername.Location = new Point(95, 73);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(63, 15);
+            lblUsername.Size = new Size(103, 15);
             lblUsername.TabIndex = 0;
-            lblUsername.Text = "Username:";
+            lblUsername.Text = "Корисничко име:";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(95, 124);
+            lblPassword.Location = new Point(148, 124);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(60, 15);
+            lblPassword.Size = new Size(50, 15);
             lblPassword.TabIndex = 1;
-            lblPassword.Text = "Password:";
+            lblPassword.Text = "Шифра:";
             // 
             // txtUsername
             // 
@@ -74,7 +74,7 @@
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(100, 36);
             btnLogin.TabIndex = 4;
-            btnLogin.Text = "Login";
+            btnLogin.Text = "Пријави се";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 

@@ -17,6 +17,8 @@ namespace Common.Domain
 
         public int KategorijaOsobeId => KategorijaOsobe?.Id ?? 0;
 
+        public string KategorijaOsobeNaziv => KategorijaOsobe?.Naziv;
+
         public override string ToString()
         {
             return $"{Email}";
@@ -26,10 +28,13 @@ namespace Common.Domain
 
         public string Values => $"'{Ime}', '{Prezime}', '{Email}', {(KategorijaOsobe?.Id.ToString() ?? "NULL")}";
 
-        public List<string> JoinConditions => null;
+        
 
-        public List<string> JoinTableNames => null;
-
+        public List<string> JoinTableNames => new List<string> { "KategorijaOsobe" };
+        public List<string> JoinConditions => new List<string>
+        {
+             "Osoba.idKategorijaOsobe = KategorijaOsobe.idKategorijaOsobe"
+        };
         public List<string> JoinColumnNames => null;
 
         public List<IEntity> GetReaderList(SqlDataReader reader)
@@ -46,7 +51,7 @@ namespace Common.Domain
                     KategorijaOsobe = new KategorijaOsobe
                     {
                         Id = (int)reader["idKategorijaOsobe"],
-                        //Naziv = (string)reader["naziv"]
+                        Naziv = (string)reader["naziv"]
                     }
                 };
                 osobe.Add(o);

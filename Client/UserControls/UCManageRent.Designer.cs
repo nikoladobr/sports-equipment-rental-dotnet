@@ -32,7 +32,6 @@ namespace Client.UserControls
         {
             dgvIznajmljivanja = new DataGridView();
             btnShowIznajmljivanje = new Button();
-            btnEditIznajmljivanje = new Button();
             btnSearchIznajmljivanje = new Button();
             lblOprema = new Label();
             lblOsoba = new Label();
@@ -52,28 +51,19 @@ namespace Client.UserControls
             // dgvIznajmljivanja
             // 
             dgvIznajmljivanja.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvIznajmljivanja.Location = new Point(3, 212);
+            dgvIznajmljivanja.Location = new Point(43, 215);
             dgvIznajmljivanja.Name = "dgvIznajmljivanja";
-            dgvIznajmljivanja.Size = new Size(637, 183);
+            dgvIznajmljivanja.Size = new Size(559, 183);
             dgvIznajmljivanja.TabIndex = 0;
             // 
             // btnShowIznajmljivanje
             // 
-            btnShowIznajmljivanje.Location = new Point(462, 171);
+            btnShowIznajmljivanje.Location = new Point(516, 173);
             btnShowIznajmljivanje.Name = "btnShowIznajmljivanje";
             btnShowIznajmljivanje.Size = new Size(86, 36);
             btnShowIznajmljivanje.TabIndex = 24;
             btnShowIznajmljivanje.Text = "Прикажи";
             btnShowIznajmljivanje.UseVisualStyleBackColor = true;
-            // 
-            // btnEditIznajmljivanje
-            // 
-            btnEditIznajmljivanje.Location = new Point(554, 171);
-            btnEditIznajmljivanje.Name = "btnEditIznajmljivanje";
-            btnEditIznajmljivanje.Size = new Size(86, 36);
-            btnEditIznajmljivanje.TabIndex = 22;
-            btnEditIznajmljivanje.Text = "Промени";
-            btnEditIznajmljivanje.UseVisualStyleBackColor = true;
             // 
             // btnSearchIznajmljivanje
             // 
@@ -201,7 +191,6 @@ namespace Client.UserControls
             Controls.Add(lblOsoba);
             Controls.Add(lblZaposleni);
             Controls.Add(btnShowIznajmljivanje);
-            Controls.Add(btnEditIznajmljivanje);
             Controls.Add(dgvIznajmljivanja);
             Name = "UCManageRent";
             Size = new Size(643, 398);
@@ -214,7 +203,6 @@ namespace Client.UserControls
 
         private DataGridView dgvIznajmljivanja;
         private Button btnShowIznajmljivanje;
-        private Button btnEditIznajmljivanje;
         private Button btnSearchIznajmljivanje;
         private Label lblOprema;
         private Label lblOsoba;
@@ -230,7 +218,6 @@ namespace Client.UserControls
         private TextBox txtMax;
 
         public Button BtnSearchIznajmljivanje { get => btnSearchIznajmljivanje; set => btnSearchIznajmljivanje = value; }
-        public Button BtnEditIznajmljivanje { get => btnEditIznajmljivanje; set => btnEditIznajmljivanje = value; }
         public ComboBox CbZaposleni { get => cbZaposleni; set => cbZaposleni = value; }
         public ComboBox CbOsoba { get => cbOsoba; set => cbOsoba = value; }
         public ComboBox CbOprema { get => cbOprema; set => cbOprema = value; }

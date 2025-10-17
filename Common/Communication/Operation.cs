@@ -23,6 +23,9 @@ namespace Common.Communication
         SearchIznajmljivanje,
         GetIznajmljivanjeById,
         GetIznajmljivanjaByAmountRange,
-        GetStavkeByIznajmljivanjeId
+        GetStavkeByIznajmljivanjeId,
+        AddStavkaIznajmljivanja,
+        RemoveStavkaIznajmljivanja,
+        AddTerminDezurstva
     }
 }
