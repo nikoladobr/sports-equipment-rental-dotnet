@@ -32,6 +32,7 @@ namespace Client.GuiController
         private PersonGuiController personGuiController;
         private RentGuiController rentGuiController;
         private DutyTermGuiController dutyTermGuiController;
+
         internal void ShowFrmMain()
         {
             frmMain = new FrmMain();
@@ -60,7 +61,6 @@ namespace Client.GuiController
         {
             frmMain.ChangePanel(rentGuiController.CreateShowRent());
         }
-
         internal void ShowAddDutyTermPanel()
         {
             frmMain.ChangePanel(dutyTermGuiController.CreateAddDutyTerm());

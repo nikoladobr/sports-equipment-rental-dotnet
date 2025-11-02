@@ -17,24 +17,33 @@ namespace Client.GuiController
         public Control CreateAddDutyTerm()
         {
             addDutyTerm = new UCAddDutyTerm();
+
             addDutyTerm.BtnUbaci.Click += UbaciTermin;
+
             return addDutyTerm;
         }
 
         private void UbaciTermin(object? sender, EventArgs e)
         {
-            td = new TerminDezurstva();
-            
-            td.Smena = int.Parse(addDutyTerm.TxtSmena.Text);
+            try
+            {
+                td = new TerminDezurstva();
 
-            Response response = Communication.Instance.AddTerminDezurstva(td);
-            if (response.ExceptionMessage == null)
-            {
-                MessageBox.Show("Систем је запамтио термин дежурства.");
+                td.Smena = int.Parse(addDutyTerm.TxtSmena.Text);
+
+                Response response = Communication.Instance.AddTerminDezurstva(td);
+                if (response.ExceptionMessage == null)
+                {
+                    MessageBox.Show("Систем је запамтио термин дежурства.");
+                }
+                else
+                {
+                    MessageBox.Show("Систем не може да запамти термин дежурства.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Debug.WriteLine(response.ExceptionMessage);
+                MessageBox.Show("Систем не може да запамти термин дежурства.");
             }
         }
     }

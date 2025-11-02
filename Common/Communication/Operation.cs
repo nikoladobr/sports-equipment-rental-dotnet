@@ -26,6 +26,7 @@ namespace Common.Communication
         GetStavkeByIznajmljivanjeId,
         AddStavkaIznajmljivanja,
         RemoveStavkaIznajmljivanja,
-        AddTerminDezurstva
+        AddTerminDezurstva,
+        UpdateIznajmljivanje
     }
 }

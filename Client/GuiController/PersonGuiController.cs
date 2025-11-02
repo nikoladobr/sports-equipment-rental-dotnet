@@ -20,7 +20,9 @@ namespace Client.GuiController
         internal Control CreateAddPerson()
         {
             addPerson = new UCAddPerson();
+
             addPerson.BtnAddPerson.Click += AddOsoba;
+
             return addPerson;
         }
 
@@ -63,7 +65,7 @@ namespace Client.GuiController
         {
             if (!addPerson.Validacija())
             {
-                MessageBox.Show("Попуните сва поља.");
+                MessageBox.Show("Систем не може да запамти особу.");
                 return;
             }
             o = new Osoba();
@@ -75,7 +77,7 @@ namespace Client.GuiController
             Response response = Communication.Instance.CreateOsoba(o);
             if (response.ExceptionMessage == null)
             {
-                MessageBox.Show("Систем је креирао особу.");
+                MessageBox.Show("Систем је запамтио особу.");
             }
             else
             {
@@ -85,17 +87,25 @@ namespace Client.GuiController
 
         private void RemoveOsoba(object? sender, EventArgs e)
         {
-            Osoba osoba = (Osoba)managePerson.DgvOsobe.SelectedRows[0].DataBoundItem;
+            try
+            {
+                Osoba osoba = (Osoba)managePerson.DgvOsobe.SelectedRows[0].DataBoundItem;
 
-            Response response = Communication.Instance.RemoveOsoba(osoba);
-            if (response.ExceptionMessage == null)
-            {
-                MessageBox.Show("Систем је обрисао особу.");
-                SearchOsoba(null, EventArgs.Empty);
+                Response response = Communication.Instance.RemoveOsoba(osoba);
+                if (response.ExceptionMessage == null)
+                {
+                    MessageBox.Show("Систем је обрисао особу.");
+                    SearchOsoba(null, EventArgs.Empty);
+                }
+                else
+                {
+                    MessageBox.Show("Систем не може да обрише особу");
+                    Debug.WriteLine(response.ExceptionMessage);
+                }
             }
-            else
+            catch(Exception ex) 
             {
-                Debug.WriteLine(response.ExceptionMessage);
+                MessageBox.Show("Систем не може да обрише особу");
             }
         }
 
@@ -146,7 +156,7 @@ namespace Client.GuiController
             var selektovana = managePerson.DgvOsobe.SelectedRows[0].DataBoundItem as Osoba;
             if (selektovana == null) 
             { 
-                MessageBox.Show("Грешка при читању особе."); 
+                MessageBox.Show("Систем не може да нађе особу"); 
                 return; 
             }
 
@@ -199,7 +209,7 @@ namespace Client.GuiController
 
             if (!managePerson.Validacija())
             {
-                MessageBox.Show("Неисправан унос.");
+                MessageBox.Show("Систем не може да запамти особу");
                 return;
             }
 

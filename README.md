@@ -10,6 +10,10 @@ Implementirani slučajevi korišćenja:
 - **Promeni osoba** (izmena postojećih podataka)
 - **Pretraži osoba** (pretraga po kriterijumima)
 - **Obriši osoba** (brisanje osobe iz sistema)
+- **Kreiraj iznajmljivanje** (dodavanje iznajmljivanja za osobu)
+- **Pretrazi iznajmljivanje** (pretraga iznajmljivanja po kriterijumima)
+- **Obrisi iznajmljivanje** (brisanje iznajmljivanja iz sistema)
+- **Promeni iznajmljivanje** (izmena postojecih podataka)
 
 ## 🏗️ Arhitektura
 
@@ -43,7 +47,7 @@ Komunikacija između klijenta i servera realizovana je pomoću **TCP socket-a** 
 2) Kliknuti **Execute** – skripta će napraviti bazu `Projekat` i ubaciti početne podatke.
 3) Login u aplikaciji:
    - korisničko ime: `admin`
-   - šifra: `Admin1234`
+   - šifra: `admin123`
 
 ## ▶️ Pokretanje
 
@@ -51,7 +55,7 @@ Komunikacija između klijenta i servera realizovana je pomoću **TCP socket-a** 
 2. Pokrenuti **Client** aplikaciju (`FrmLogin`).
 3. Ulogovati se sa default nalogom:
    - Korisničko ime: `admin`
-   - Lozinka: `Admin1234`
+   - Lozinka: `admin123`
 
 ## 📌 Napomena
 

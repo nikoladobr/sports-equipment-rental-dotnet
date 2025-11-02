@@ -82,6 +82,11 @@ namespace Server
             AddIznajmljivanjeSO addIznajmljivanje = new AddIznajmljivanjeSO(iznajmljivanje);
             addIznajmljivanje.ExecuteTemplate();
         }
+        internal void AddTerminDezurstva(TerminDezurstva terminDezurstva)
+        {
+            AddTerminDezurstvaSO addTerminDezurstva = new AddTerminDezurstvaSO(terminDezurstva);
+            addTerminDezurstva.ExecuteTemplate();
+        }
 
         //Remove
         internal void RemoveOsoba(Osoba osoba)
@@ -110,29 +115,17 @@ namespace Server
             UpdateOsobaSO so = new UpdateOsobaSO(o);
             so.ExecuteTemplate();
         }
+        internal void UpdateIznajmljivanje(Iznajmljivanje iznajmljivanje)
+        {
+            var so = new UpdateIznajmljivanjeSO(iznajmljivanje);
+            so.ExecuteTemplate();
+        }
 
         internal object GetStavkeByIznajmljivanjeId(Iznajmljivanje i)
         {
             var so = new GetStavkeByIznajmljivanjeIdSO(i.Id);
             so.ExecuteTemplate();
-            return so.Result; // List<StavkaIznajmljivanja>
-        }
-        internal void AddStavka(StavkaIznajmljivanja s)
-        {
-            var so = new AddStavkaIznajmljivanjaSO(s);
-            so.ExecuteTemplate();
-        }
-
-        internal void RemoveStavka(StavkaIznajmljivanja s)
-        {
-            var so = new RemoveStavkaIznajmljivanjaSO(s);
-            so.ExecuteTemplate();
-        }
-
-        internal void AddTerminDezurstva(TerminDezurstva terminDezurstva)
-        {
-            AddTerminDezurstvaSO addTerminDezurstva = new AddTerminDezurstvaSO(terminDezurstva);
-            addTerminDezurstva.ExecuteTemplate();
+            return so.Result;
         }
     }
 }

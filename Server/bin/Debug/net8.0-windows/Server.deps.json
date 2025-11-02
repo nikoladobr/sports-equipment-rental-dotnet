@@ -9,7 +9,9 @@
       "Server/1.0.0": {
         "dependencies": {
           "Common": "1.0.0",
-          "DBBroker": "1.0.0"
+          "DBBroker": "1.0.0",
+          "Microsoft.Data.SqlClient": "6.1.1",
+          "System.Configuration.ConfigurationManager": "9.0.9"
         },
         "runtime": {
           "Server.dll": {}
@@ -414,7 +416,8 @@
       "System.Text.Json/8.0.5": {},
       "Common/1.0.0": {
         "dependencies": {
-          "Microsoft.Data.SqlClient": "6.1.1"
+          "Microsoft.Data.SqlClient": "6.1.1",
+          "System.Configuration.ConfigurationManager": "9.0.9"
         },
         "runtime": {
           "Common.dll": {

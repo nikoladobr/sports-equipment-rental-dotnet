@@ -11,3 +11,29 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\refint\Comm
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\Common.pdb
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\ref\Common.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.deps.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\ref\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\refint\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.deps.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\bin\Debug\net8.0\Common.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.csproj.AssemblyReference.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\Common.sourcelink.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Common\obj\Debug\net8.0\ref\Common.dll

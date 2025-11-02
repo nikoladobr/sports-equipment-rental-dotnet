@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj": {}
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Nikola-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\obj\\",
+        "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\ndobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nikola-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ndobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +49,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.9, )"
             }
           },
           "imports": [
@@ -71,25 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj": {
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj",
+        "projectUniqueName": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj",
         "projectName": "DBBroker",
-        "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj",
-        "packagesPath": "C:\\Users\\Nikola-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\obj\\",
+        "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj",
+        "packagesPath": "C:\\Users\\ndobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nikola-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ndobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj"
+              "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {
+                "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj"
               }
             }
           }
@@ -150,25 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj": {
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\Nikola-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\obj\\",
+        "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\ndobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nikola-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ndobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,11 +174,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj"
+              "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {
+                "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj"
               },
-              "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj": {
-                "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj"
+              "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj": {
+                "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj"
               }
             }
           }
@@ -206,6 +198,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -225,7 +227,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

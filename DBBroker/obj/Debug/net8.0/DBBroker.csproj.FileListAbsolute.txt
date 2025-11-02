@@ -14,3 +14,35 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\refint\DB
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.pdb
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\ref\DBBroker.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\DBBroker\obj\Debug\net8.0\DBBroker.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.deps.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\Common.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\Common.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.Up2Date
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\refint\DBBroker.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\ref\DBBroker.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\Common.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.AssemblyReference.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfoInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.AssemblyInfo.cs
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.CoreCompileInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.sourcelink.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.csproj.Up2Date
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\refint\DBBroker.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\DBBroker.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.deps.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\bin\Debug\net8.0\DBBroker.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\DBBroker\obj\Debug\net8.0\ref\DBBroker.dll

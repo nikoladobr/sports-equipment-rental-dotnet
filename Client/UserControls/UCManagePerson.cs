@@ -48,7 +48,7 @@ namespace Client.UserControls
             }
             if (!txtEmail.Text.Contains('@'))
             {
-                MessageBox.Show("Neispravan unos emaila (@)");
+                MessageBox.Show("Неисправан унос емаила (@)");
                 txtEmail.BackColor = Color.Salmon;
                 isValid = false;
             }

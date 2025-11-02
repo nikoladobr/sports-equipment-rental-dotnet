@@ -1,45 +1,43 @@
 ﻿using Common.Domain;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.SystemOperation
 {
     public class SearchIznajmljivanjeSO : SystemOperationBase
     {
-        private readonly Iznajmljivanje i;
-        public List<Iznajmljivanje> Result { get; private set; }
+        private readonly Iznajmljivanje krit;
+        public List<Iznajmljivanje> Result { get; private set; } = new();
 
         public SearchIznajmljivanjeSO(Iznajmljivanje i)
         {
-            this.i = i;
+            krit = i ?? new Iznajmljivanje();
         }
 
         protected override void ExecuteConcreteOperation()
         {
-            var cond = new List<string>();
+            var cond = new List<string> { "1=1" };
 
-            if (i.Id > 0)
-                cond.Add($"idIznajmljivanje = {i.Id}");
+            if (krit.Id > 0)
+                cond.Add($"Iznajmljivanje.idIznajmljivanje = {krit.Id}");
 
-            if (i.Zaposleni != null && i.Zaposleni.Id > 0)
-                cond.Add($"Iznajmljivanje.idZaposleni = {i.Zaposleni.Id}");
+            if (krit.Zaposleni != null && krit.Zaposleni.Id > 0)
+                cond.Add($"Iznajmljivanje.idZaposleni = {krit.Zaposleni.Id}");
 
-            if (i.Osoba != null && i.Osoba.Id > 0)
-                cond.Add($"Iznajmljivanje.idOsoba = {i.Osoba.Id}");
+            if (krit.Osoba != null && krit.Osoba.Id > 0)
+                cond.Add($"Iznajmljivanje.idOsoba = {krit.Osoba.Id}");
 
-            // Oprema
-            var opremaId = i.Stavke?.FirstOrDefault()?.Oprema?.Id ?? 0;
+            // Oprema (preko stavke)
+            var opremaId = krit.Stavke?.FirstOrDefault()?.Oprema?.Id ?? 0;
             if (opremaId > 0)
-                cond.Add($@"EXISTS (
-                    SELECT 1 FROM StavkaIznajmljivanja s
-                    WHERE s.idIznajmljivanje = Iznajmljivanje.idIznajmljivanje
-                      AND s.idOprema = {opremaId}
+            {
+                cond.Add(@$"EXISTS (
+                    SELECT 1
+                    FROM StavkaIznajmljivanja si
+                    WHERE si.idIznajmljivanje = Iznajmljivanje.idIznajmljivanje
+                      AND si.idOprema = {opremaId}
                 )");
-
-            if (cond.Count == 0) throw new Exception("Унесите бар један критеријум.");
+            }
 
             string condition = string.Join(" AND ", cond);
 

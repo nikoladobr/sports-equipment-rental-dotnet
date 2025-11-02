@@ -614,7 +614,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.Data.SqlClient": "6.1.1"
+          "Microsoft.Data.SqlClient": "6.1.1",
+          "System.Configuration.ConfigurationManager": "9.0.9"
         },
         "compile": {
           "bin/placeholder/Common.dll": {}
@@ -1624,28 +1625,25 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Common >= 1.0.0",
-      "DBBroker >= 1.0.0"
+      "DBBroker >= 1.0.0",
+      "Microsoft.Data.SqlClient >= 6.1.1",
+      "System.Configuration.ConfigurationManager >= 9.0.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikola-PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ndobr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj",
+      "projectUniqueName": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\Nikola-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Server\\obj\\",
+      "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\Server.csproj",
+      "packagesPath": "C:\\Users\\ndobr\\.nuget\\packages\\",
+      "outputPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nikola-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ndobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1659,11 +1657,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj"
+            "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {
+              "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj"
             },
-            "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj": {
-              "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\DBBroker\\DBBroker.csproj"
+            "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj": {
+              "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\DBBroker\\DBBroker.csproj"
             }
           }
         }
@@ -1683,6 +1681,16 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[9.0.9, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -1702,7 +1710,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

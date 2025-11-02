@@ -14,7 +14,6 @@ namespace Common.Domain
         List<string> JoinConditions { get; }
         List<string> JoinTableNames { get; }
         List<string> JoinColumnNames { get; }
-
         List<IEntity> GetReaderList(SqlDataReader reader);
     }
 }

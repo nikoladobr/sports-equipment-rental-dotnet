@@ -106,14 +106,11 @@ namespace Server
                         var iArgg = ((System.Text.Json.JsonElement)req.Argument).Deserialize<Iznajmljivanje>();
                         r.Result = Controller.Instance.GetStavkeByIznajmljivanjeId(iArgg);
                         break;
-                    case Operation.AddStavkaIznajmljivanja:
-                        Controller.Instance.AddStavka(serializer.ReadType<StavkaIznajmljivanja>(req.Argument));
-                        break;
-                    case Operation.RemoveStavkaIznajmljivanja:
-                        Controller.Instance.RemoveStavka(serializer.ReadType<StavkaIznajmljivanja>(req.Argument));
-                        break;
                     case Operation.AddTerminDezurstva:
                         Controller.Instance.AddTerminDezurstva(serializer.ReadType<TerminDezurstva>(req.Argument));
+                        break;
+                    case Operation.UpdateIznajmljivanje:
+                        Controller.Instance.UpdateIznajmljivanje(serializer.ReadType<Iznajmljivanje>(req.Argument));
                         break;
                 }
             }

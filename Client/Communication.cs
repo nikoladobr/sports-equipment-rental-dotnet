@@ -213,6 +213,22 @@ namespace Client
             var el = (JsonElement)response.Result;
             return el.Deserialize<Iznajmljivanje>();
         }
+        internal Response UpdateIznajmljivanje(Iznajmljivanje i)
+        {
+            var request = new Request
+            {
+                Argument = i,
+                Operation = Operation.UpdateIznajmljivanje
+            };
+            serializer.Send(request);
+
+            var response = serializer.Receive<Response>();
+            if (response.ExceptionMessage != null)
+                throw new Exception(response.ExceptionMessage);
+
+            return response;
+        }
+
 
         internal List<StavkaIznajmljivanja> GetStavkeByIznajmljivanjeId(int id)
         {
@@ -228,30 +244,6 @@ namespace Client
                 throw new Exception(response.ExceptionMessage);
 
             return serializer.ReadType<List<StavkaIznajmljivanja>>(response.Result);
-        }
-
-        internal void AddStavka(StavkaIznajmljivanja s)
-        {
-            var request = new Request
-            {
-                Operation = Operation.AddStavkaIznajmljivanja,
-                Argument = s
-            };
-            serializer.Send(request);
-            var response = serializer.Receive<Response>();
-            if (response.ExceptionMessage != null) throw new Exception(response.ExceptionMessage);
-        }
-
-        internal void RemoveStavka(StavkaIznajmljivanja s)
-        {
-            var request = new Request
-            {
-                Operation = Operation.RemoveStavkaIznajmljivanja,
-                Argument = s
-            };
-            serializer.Send(request);
-            var response = serializer.Receive<Response>();
-            if (response.ExceptionMessage != null) throw new Exception(response.ExceptionMessage);
         }
 
         internal Response AddTerminDezurstva(TerminDezurstva td)

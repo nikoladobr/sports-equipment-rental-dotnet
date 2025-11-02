@@ -54,175 +54,187 @@ namespace Client.UserControls
             btnAddRent = new Button();
             label4 = new Label();
             lblRb = new Label();
+            dgvStavke = new DataGridView();
+            btnObrisi = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvStavke).BeginInit();
             SuspendLayout();
             // 
             // lblUkupanIznos
             // 
             lblUkupanIznos.AutoSize = true;
-            lblUkupanIznos.Location = new Point(10, 333);
+            lblUkupanIznos.Location = new Point(11, 444);
             lblUkupanIznos.Name = "lblUkupanIznos";
-            lblUkupanIznos.Size = new Size(84, 15);
+            lblUkupanIznos.Size = new Size(106, 20);
             lblUkupanIznos.TabIndex = 1;
             lblUkupanIznos.Text = "Укупан износ:";
             // 
             // lblOd
             // 
             lblOd.AutoSize = true;
-            lblOd.Location = new Point(10, 48);
+            lblOd.Location = new Point(11, 64);
             lblOd.Name = "lblOd";
-            lblOd.Size = new Size(25, 15);
+            lblOd.Size = new Size(31, 20);
             lblOd.TabIndex = 2;
             lblOd.Text = "Од:";
             // 
             // lblOkvir1
             // 
             lblOkvir1.AutoSize = true;
-            lblOkvir1.Location = new Point(0, 82);
+            lblOkvir1.Location = new Point(0, 109);
             lblOkvir1.Name = "lblOkvir1";
-            lblOkvir1.Size = new Size(647, 15);
+            lblOkvir1.Size = new Size(532, 20);
             lblOkvir1.TabIndex = 3;
-            lblOkvir1.Text = "--------------------------------------------------- Ставка изнајмљивања --------------------------------------------------- ";
+            lblOkvir1.Text = "------------------------------ Ставка изнајмљивања ------------------------------";
             // 
             // lblKolicina
             // 
             lblKolicina.AutoSize = true;
-            lblKolicina.Location = new Point(10, 165);
+            lblKolicina.Location = new Point(11, 220);
             lblKolicina.Name = "lblKolicina";
-            lblKolicina.Size = new Size(65, 15);
+            lblKolicina.Size = new Size(81, 20);
             lblKolicina.TabIndex = 5;
             lblKolicina.Text = "Количина:";
             // 
             // lblCena
             // 
             lblCena.AutoSize = true;
-            lblCena.Location = new Point(10, 136);
+            lblCena.Location = new Point(11, 181);
             lblCena.Name = "lblCena";
-            lblCena.Size = new Size(38, 15);
+            lblCena.Size = new Size(48, 20);
             lblCena.TabIndex = 6;
             lblCena.Text = "Цена:";
             // 
             // lblDo
             // 
             lblDo.AutoSize = true;
-            lblDo.Location = new Point(10, 195);
+            lblDo.Location = new Point(11, 260);
             lblDo.Name = "lblDo";
-            lblDo.Size = new Size(25, 15);
+            lblDo.Size = new Size(31, 20);
             lblDo.TabIndex = 7;
             lblDo.Text = "До:";
             // 
             // lblTrajanje
             // 
             lblTrajanje.AutoSize = true;
-            lblTrajanje.Location = new Point(10, 225);
+            lblTrajanje.Location = new Point(11, 300);
             lblTrajanje.Name = "lblTrajanje";
-            lblTrajanje.Size = new Size(54, 15);
+            lblTrajanje.Size = new Size(69, 20);
             lblTrajanje.TabIndex = 8;
             lblTrajanje.Text = "Трајање:";
             // 
             // lblIznos
             // 
             lblIznos.AutoSize = true;
-            lblIznos.Location = new Point(10, 255);
+            lblIznos.Location = new Point(11, 340);
             lblIznos.Name = "lblIznos";
-            lblIznos.Size = new Size(44, 15);
+            lblIznos.Size = new Size(55, 20);
             lblIznos.TabIndex = 9;
             lblIznos.Text = "Износ:";
             // 
             // lblOprema
             // 
             lblOprema.AutoSize = true;
-            lblOprema.Location = new Point(10, 106);
+            lblOprema.Location = new Point(11, 141);
             lblOprema.Name = "lblOprema";
-            lblOprema.Size = new Size(54, 15);
+            lblOprema.Size = new Size(68, 20);
             lblOprema.TabIndex = 10;
             lblOprema.Text = "Опрема:";
             // 
             // lblOsoba
             // 
             lblOsoba.AutoSize = true;
-            lblOsoba.Location = new Point(10, 19);
+            lblOsoba.Location = new Point(11, 25);
             lblOsoba.Name = "lblOsoba";
-            lblOsoba.Size = new Size(45, 15);
+            lblOsoba.Size = new Size(56, 20);
             lblOsoba.TabIndex = 11;
             lblOsoba.Text = "Особа:";
             // 
             // cbOsoba
             // 
             cbOsoba.FormattingEnabled = true;
-            cbOsoba.Location = new Point(115, 16);
+            cbOsoba.Location = new Point(131, 21);
+            cbOsoba.Margin = new Padding(3, 4, 3, 4);
             cbOsoba.Name = "cbOsoba";
-            cbOsoba.Size = new Size(185, 23);
+            cbOsoba.Size = new Size(211, 28);
             cbOsoba.TabIndex = 12;
             // 
             // txtIznos
             // 
             txtIznos.Enabled = false;
-            txtIznos.Location = new Point(115, 252);
+            txtIznos.Location = new Point(131, 336);
+            txtIznos.Margin = new Padding(3, 4, 3, 4);
             txtIznos.Name = "txtIznos";
-            txtIznos.Size = new Size(185, 23);
+            txtIznos.Size = new Size(211, 27);
             txtIznos.TabIndex = 13;
             // 
             // dtpSince
             // 
             dtpSince.Format = DateTimePickerFormat.Custom;
-            dtpSince.Location = new Point(115, 45);
+            dtpSince.Location = new Point(131, 60);
+            dtpSince.Margin = new Padding(3, 4, 3, 4);
             dtpSince.Name = "dtpSince";
-            dtpSince.Size = new Size(185, 23);
+            dtpSince.Size = new Size(211, 27);
             dtpSince.TabIndex = 14;
             // 
             // lblOkvir2
             // 
             lblOkvir2.AutoSize = true;
-            lblOkvir2.Location = new Point(-3, 282);
+            lblOkvir2.Location = new Point(-3, 376);
             lblOkvir2.Name = "lblOkvir2";
-            lblOkvir2.Size = new Size(650, 15);
+            lblOkvir2.Size = new Size(541, 20);
             lblOkvir2.TabIndex = 15;
-            lblOkvir2.Text = "-------------------------------------------------------------------------------------------------------------------------------- ";
+            lblOkvir2.Text = "---------------------------------------------------------------------------------------- ";
             // 
             // txtKolicina
             // 
-            txtKolicina.Location = new Point(115, 162);
+            txtKolicina.Location = new Point(131, 216);
+            txtKolicina.Margin = new Padding(3, 4, 3, 4);
             txtKolicina.Name = "txtKolicina";
-            txtKolicina.Size = new Size(185, 23);
+            txtKolicina.Size = new Size(211, 27);
             txtKolicina.TabIndex = 16;
             // 
             // txtCena
             // 
             txtCena.Enabled = false;
-            txtCena.Location = new Point(115, 133);
+            txtCena.Location = new Point(131, 177);
+            txtCena.Margin = new Padding(3, 4, 3, 4);
             txtCena.Name = "txtCena";
-            txtCena.Size = new Size(185, 23);
+            txtCena.Size = new Size(211, 27);
             txtCena.TabIndex = 17;
             // 
             // txtTrajanje
             // 
             txtTrajanje.Enabled = false;
-            txtTrajanje.Location = new Point(115, 222);
+            txtTrajanje.Location = new Point(131, 296);
+            txtTrajanje.Margin = new Padding(3, 4, 3, 4);
             txtTrajanje.Name = "txtTrajanje";
-            txtTrajanje.Size = new Size(185, 23);
+            txtTrajanje.Size = new Size(211, 27);
             txtTrajanje.TabIndex = 18;
             // 
             // dtpTo
             // 
             dtpTo.Format = DateTimePickerFormat.Custom;
-            dtpTo.Location = new Point(115, 191);
+            dtpTo.Location = new Point(131, 255);
+            dtpTo.Margin = new Padding(3, 4, 3, 4);
             dtpTo.Name = "dtpTo";
-            dtpTo.Size = new Size(185, 23);
+            dtpTo.Size = new Size(211, 27);
             dtpTo.TabIndex = 19;
             // 
             // cbOprema
             // 
             cbOprema.FormattingEnabled = true;
-            cbOprema.Location = new Point(115, 103);
+            cbOprema.Location = new Point(131, 137);
+            cbOprema.Margin = new Padding(3, 4, 3, 4);
             cbOprema.Name = "cbOprema";
-            cbOprema.Size = new Size(185, 23);
+            cbOprema.Size = new Size(211, 28);
             cbOprema.TabIndex = 20;
             // 
             // btnAddRentalItem
             // 
-            btnAddRentalItem.Location = new Point(379, 172);
+            btnAddRentalItem.Location = new Point(360, 192);
+            btnAddRentalItem.Margin = new Padding(3, 4, 3, 4);
             btnAddRentalItem.Name = "btnAddRentalItem";
-            btnAddRentalItem.Size = new Size(132, 38);
+            btnAddRentalItem.Size = new Size(151, 51);
             btnAddRentalItem.TabIndex = 21;
             btnAddRentalItem.Text = "Додај ставку";
             btnAddRentalItem.UseVisualStyleBackColor = true;
@@ -230,16 +242,18 @@ namespace Client.UserControls
             // txtUkupanIznos
             // 
             txtUkupanIznos.Enabled = false;
-            txtUkupanIznos.Location = new Point(115, 330);
+            txtUkupanIznos.Location = new Point(131, 440);
+            txtUkupanIznos.Margin = new Padding(3, 4, 3, 4);
             txtUkupanIznos.Name = "txtUkupanIznos";
-            txtUkupanIznos.Size = new Size(185, 23);
+            txtUkupanIznos.Size = new Size(211, 27);
             txtUkupanIznos.TabIndex = 22;
             // 
             // btnAddRent
             // 
-            btnAddRent.Location = new Point(379, 321);
+            btnAddRent.Location = new Point(360, 429);
+            btnAddRent.Margin = new Padding(3, 4, 3, 4);
             btnAddRent.Name = "btnAddRent";
-            btnAddRent.Size = new Size(132, 38);
+            btnAddRent.Size = new Size(151, 51);
             btnAddRent.TabIndex = 23;
             btnAddRent.Text = "Додај изнајмљивање";
             btnAddRent.UseVisualStyleBackColor = true;
@@ -247,24 +261,46 @@ namespace Client.UserControls
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(441, 106);
+            label4.Location = new Point(422, 140);
             label4.Name = "label4";
-            label4.Size = new Size(70, 15);
+            label4.Size = new Size(89, 20);
             label4.TabIndex = 24;
             label4.Text = "Редни број:";
             // 
             // lblRb
             // 
             lblRb.AutoSize = true;
-            lblRb.Location = new Point(517, 106);
+            lblRb.Location = new Point(502, 140);
             lblRb.Name = "lblRb";
-            lblRb.Size = new Size(0, 15);
+            lblRb.Size = new Size(0, 20);
             lblRb.TabIndex = 25;
+            // 
+            // dgvStavke
+            // 
+            dgvStavke.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStavke.Location = new Point(538, 3);
+            dgvStavke.Name = "dgvStavke";
+            dgvStavke.RowHeadersWidth = 51;
+            dgvStavke.Size = new Size(777, 503);
+            dgvStavke.TabIndex = 26;
+            // 
+            // btnObrisi
+            // 
+            btnObrisi.Enabled = false;
+            btnObrisi.Location = new Point(360, 269);
+            btnObrisi.Margin = new Padding(3, 4, 3, 4);
+            btnObrisi.Name = "btnObrisi";
+            btnObrisi.Size = new Size(151, 51);
+            btnObrisi.TabIndex = 27;
+            btnObrisi.Text = "Обриши ставку";
+            btnObrisi.UseVisualStyleBackColor = true;
             // 
             // UCAddRent
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnObrisi);
+            Controls.Add(dgvStavke);
             Controls.Add(lblRb);
             Controls.Add(label4);
             Controls.Add(btnAddRent);
@@ -289,8 +325,10 @@ namespace Client.UserControls
             Controls.Add(lblOkvir1);
             Controls.Add(lblOd);
             Controls.Add(lblUkupanIznos);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "UCAddRent";
-            Size = new Size(643, 398);
+            Size = new Size(1318, 509);
+            ((System.ComponentModel.ISupportInitialize)dgvStavke).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -324,10 +362,12 @@ namespace Client.UserControls
 
         private Button btnAddRentalItem;
         private Button btnAddRent;
-
+        private DataGridView dgvStavke;
+        private Button btnObrisi;
 
         public Button BtnAddRentalItem { get => btnAddRentalItem; set => btnAddRentalItem = value; }
         public Button BtnAddRent { get => btnAddRent; set => btnAddRent = value; }
+        public Button BtnObrisi { get => btnObrisi; set => btnObrisi = value; }
         public TextBox TxtIznos { get => txtIznos; set => txtIznos = value; }
         public TextBox TxtKolicina { get => txtKolicina; set => txtKolicina = value; }
         public TextBox TxtCena { get => txtCena; set => txtCena = value; }
@@ -350,5 +390,6 @@ namespace Client.UserControls
         public Label LblRb { get => lblRb; set => lblRb = value; }
         public DateTimePicker DtpTo { get => dtpTo; set => dtpTo = value; }
         public DateTimePicker DtpSince { get => dtpSince; set => dtpSince = value; }
+        public DataGridView DgvStavke { get => dgvStavke; set => dgvStavke = value; }
     }
 }

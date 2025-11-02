@@ -15,6 +15,8 @@ namespace Common.Domain
         public string Email { get; set; }
         public KategorijaOsobe KategorijaOsobe { get; set; }
 
+
+
         public int KategorijaOsobeId => KategorijaOsobe?.Id ?? 0;
 
         public string KategorijaOsobeNaziv => KategorijaOsobe?.Naziv;

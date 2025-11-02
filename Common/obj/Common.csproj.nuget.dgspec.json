@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {}
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj": {
+    "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Nikola-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola-PC\\Desktop\\Projekat\\Projekat\\Common\\obj\\",
+        "projectPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\ndobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Пројекти\\Пројектовање софтвера\\sports-equipment-rental-dotnet\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nikola-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ndobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +49,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.9, )"
             }
           },
           "imports": [
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

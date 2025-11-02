@@ -49,29 +49,37 @@ namespace Client.GuiController
         }
         public void Login(object? sender, EventArgs e)
         {
-            if (!frmLogin.Validacija())
+            try
             {
-                MessageBox.Show("Молимо попуните сва поља");
-                return;
+                if (!frmLogin.Validacija())
+                {
+                    MessageBox.Show("Молимо попуните сва поља");
+                    return;
+                }
+
+                Zaposleni z = new Zaposleni
+                {
+                    KorisnickoIme = frmLogin.TxtUsername.Text,
+                    Sifra = frmLogin.TxtPassword.Text
+                };
+                Response response = Communication.Instance.Login(z);
+                if (response.ExceptionMessage == null)
+                {
+                    Zaposleni ulogovani = (Zaposleni)response.Result;
+
+                    Session.Instance.Zaposleni = ulogovani;
+
+                    MessageBox.Show("Корисничко име и шифра су исправни.");
+
+                    frmLogin.Visible = false;
+                    MainCoordinator.Instance.ShowFrmMain();
+                }
+                else
+                {
+                    MessageBox.Show("Корисничко име и шифра нису исправни.");
+                }
             }
-
-            Zaposleni z = new Zaposleni
-            {
-                KorisnickoIme = frmLogin.TxtUsername.Text,
-                Sifra = frmLogin.TxtPassword.Text
-            };
-            Response response = Communication.Instance.Login(z);
-            if (response.ExceptionMessage == null)
-            {
-                Zaposleni ulogovani = (Zaposleni)response.Result;
-
-                Session.Instance.Zaposleni = ulogovani;
-
-                MessageBox.Show("Корисничко име и шифра су исправни.");
-                frmLogin.Visible = false;
-                MainCoordinator.Instance.ShowFrmMain();
-            }
-            else
+            catch(Exception ex)
             {
                 MessageBox.Show("Не може да се отвори главна форма и мени");
             }

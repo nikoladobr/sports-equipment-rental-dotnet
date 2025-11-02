@@ -91,18 +91,5 @@ namespace DBBroker
             cmd.ExecuteNonQuery();
             cmd.Dispose();
         }
-
-        public List<IEntity> GetJoin(IEntity mainEntity, string joinClause, string condition = "1=1")
-        {
-            SqlCommand command = connection.CreateCommand();
-            command.CommandText = $"SELECT * FROM {mainEntity.TableName} {joinClause} WHERE {condition}";
-            SqlDataReader reader = command.ExecuteReader();
-
-            List<IEntity> list = mainEntity.GetReaderList(reader);
-            reader.Close();
-            command.Dispose();
-
-            return list;
-        }
     }
 }

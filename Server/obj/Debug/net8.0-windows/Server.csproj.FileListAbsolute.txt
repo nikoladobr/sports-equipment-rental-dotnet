@@ -70,3 +70,147 @@ C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\Ser
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\ref\Server.dll
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\bin\Debug\net8.0-windows\Server.dll.config
 C:\Users\Nikola-PC\Desktop\Projekat\Projekat\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.exe
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.dll.config
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.deps.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.runtimeconfig.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Common.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\DBBroker.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Common.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\DBBroker.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.FrmServer.resources
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.Up2Date
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\refint\Server.dll
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.pdb
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\Nikola\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\ref\Server.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Common.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\DBBroker.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Common.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\DBBroker.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.AssemblyReference.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.FrmServer.resources
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.GenerateResource.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.csproj.Up2Date
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\refint\Server.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.exe
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.dll.config
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.deps.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.runtimeconfig.json
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.dll
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\bin\Debug\net8.0-windows\Server.pdb
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
+D:\Пројекти\Пројектовање софтвера\sports-equipment-rental-dotnet\Server\obj\Debug\net8.0-windows\ref\Server.dll
